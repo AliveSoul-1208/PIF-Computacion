@@ -3,7 +3,7 @@ import streamlit as st
 st.write(""" """)
 
 
-st.write("""# Universidad Nacional de San Agustín de Arequipa """)
+st.write("""### Universidad Nacional de San Agustín de Arequipa """)
 st.write("""# Escuela Profesional de Ingeniería de Telecomunicaciones """)
 
 # 

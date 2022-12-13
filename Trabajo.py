@@ -328,7 +328,6 @@ st.write("""# Ingeniero Renzo Bolivar - Docente DAIE""")
 #Importamos librerias para Ciencia de Datos y Machine Learning
 import numpy as np
 import pandas as pd
-import  matplotlib.pyplot as plt
 
 
 # In[ ]:

@@ -3,70 +3,59 @@ import streamlit as st
 st.write(""" """)
 
 
-st.write("""### Universidad Nacional de San Agustín de Arequipa """)
+st.write("""# Universidad Nacional de San Agustín de Arequipa """)
 st.write("""# Escuela Profesional de Ingeniería de Telecomunicaciones """)
 
 # 
 st.write("""# ![image.png](https://www.unsa.edu.pe/ouresponsabilidadsocial/wp-content/themes/observatorio/img/unsa-logo.png) """)
 # 
 
-st.write("""# Ingeniero Renzo Bolivar - Docente DAIE""")
+st.write("""## Ingeniero Renzo Bolivar - Docente DAIE""")
 
-# ![linea 1](https://user-images.githubusercontent.com/19308295/115926252-2b8a0c00-a448-11eb-9d9c-b43beaf0ff68.png)
+st.write("""# ![linea 1](https://user-images.githubusercontent.com/19308295/115926252-2b8a0c00-a448-11eb-9d9c-b43beaf0ff68.png)""")
 
-# <center> <h2>GRUPO B - Nº2</h2> </center> 
-# <h2>Alumnos:  </h2>
-# <h2>    
-# 
-#     Miguel Angel Ccahuana Quispe
-#     Brayan Enrique Paricahua Choque
-#     Jose Luis Mendoza Condo
-#     Piero Joseph Sanchez Sanchez
-# </h2>
-# 
+st.write("""## GRUPO B - Nº2""")
+st.write("""## Alumnos:""")  
 
-# ![linea 1](https://user-images.githubusercontent.com/19308295/115926252-2b8a0c00-a448-11eb-9d9c-b43beaf0ff68.png)
+st.write("""
+###     Miguel Angel Ccahuana Quispe
+###     Brayan Enrique Paricahua Choque
+###     Jose Luis Mendoza Condo
+###     Piero Joseph Sanchez Sanchez""") 
 
-# <center> <h1>INVESTIGACIÓN FORMATIVA</h1> </center> 
-# <center> <h1>PROYECTO FINAL</h1> </center> 
-# <center> <h1>PYTHON - Inteligencia Artificial</h1> </center> 
+st.write("""# ![linea 1](https://user-images.githubusercontent.com/19308295/115926252-2b8a0c00-a448-11eb-9d9c-b43beaf0ff68.png)""")
+st.write("""# INVESTIGACIÓN FORMATIVA""")
+ 
+st.write("""# PROYECTO FINAL""")
+st.write("""## PYTHON - Inteligencia Artificial""")
 
-# ![linea 1](https://user-images.githubusercontent.com/19308295/115926252-2b8a0c00-a448-11eb-9d9c-b43beaf0ff68.png)
+st.write("""# ![linea 1](https://user-images.githubusercontent.com/19308295/115926252-2b8a0c00-a448-11eb-9d9c-b43beaf0ff68.png)""")
 
-# ## OBJETIVOS
+st.write("""## OBJETIVOS""")
 
-# Los Objetivos de la investigación formativa son:
-# 
-# - **Competencia Comunicativa** Presentación de sus resultados con lenguaje de programación Python utilizando los archivos Jupyter Notebook.
-# - **Competencia Aprendizaje**: con las aptitudes en **Descomposición** (desarticular el problema en pequeñas series de soluciones), **Reconocimiento de Patrones** (encontrar simulitud al momento de resolver problemas), **Abstracción** (omitir información relevante), **Algoritmos** (pasos para resolución de un problema).
-# - **Competencia de Trabajo en Equipo**: exige habilidades individuales y grupales orientadas a la cooperación, planificación, coordinación, asignación de tareas, cumplimiento de tareas y solución de conflictos en pro de un trabajo colectivo, utilizando los archivos Jupyter Notebook los cuales se sincronizan en el servidor Gitlab con comandos Git.
+st.write("""### Los Objetivos de la investigación formativa son:""")
+st.write("""
+#### - **Competencia Comunicativa** Presentación de sus resultados con lenguaje de programación Python utilizando los archivos Jupyter Notebook.
+#### - **Competencia Aprendizaje**: con las aptitudes en **Descomposición** (desarticular el problema en pequeñas series de soluciones), **Reconocimiento de Patrones** (encontrar simulitud al momento de resolver problemas), **Abstracción** (omitir información relevante), **Algoritmos** (pasos para resolución de un problema).
+#### - **Competencia de Trabajo en Equipo**: exige habilidades individuales y grupales orientadas a la cooperación, planificación, coordinación, asignación de tareas, cumplimiento de tareas y solución de conflictos en pro de un trabajo colectivo, utilizando los archivos Jupyter Notebook los cuales se sincronizan en el servidor Gitlab con comandos Git.""")
 
-# ![linea 1](https://user-images.githubusercontent.com/19308295/115926252-2b8a0c00-a448-11eb-9d9c-b43beaf0ff68.png)
+st.write("""# ![linea 1](https://user-images.githubusercontent.com/19308295/115926252-2b8a0c00-a448-11eb-9d9c-b43beaf0ff68.png)""")
 
-# <center> <h1>Aplicación en IA</h1> </center> 
-# <center> <h1>Sistema Recomendador</h1> </center> 
+st.write("""# Aplicación en IA""")
+st.write("""## Sistema Recomendador """)
 
-# ![linea 2](https://user-images.githubusercontent.com/19308295/115926262-2fb62980-a448-11eb-8189-c2f10e499944.png)
+st.write("""# ![linea 2](https://user-images.githubusercontent.com/19308295/115926262-2fb62980-a448-11eb-8189-c2f10e499944.png) """)
 
-# <div class="alert alert-info">
-# El Sistema recomendador deberá encontrar la <strong>compatibilidad o similitud</strong> entre un grupo de personas encuestadas, en el área de:
-# 
-# </div>
+st.write("""### El Sistema recomendador deberá encontrar la compatibilidad o similitud entre un grupo de personas encuestadas, en el área de: """)
 
-# <div class="alert alert-info">
-#     
-# 
 #    
-#    -Peliculas
+st.write("""####    -Peliculas""")
 #     
 # 
 #     
 # 
 # 
-#     
-# </div>
 
-# <div class="alert alert-info">
 # 
 #     
 #    La <strong>compatibilidad o similitud</strong> será encontrada con el algoritmo de <strong>Correlación de Pearson</strong> y será verificada con la <strong>La Matrix de Correlación de Pearson con una librería de Python y utilizando una función personal</strong>

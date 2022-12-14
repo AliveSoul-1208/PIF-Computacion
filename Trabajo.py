@@ -91,9 +91,41 @@ st.write("""### Regresion lineal""")
 
 st.write("""# ![linea 2](https://user-images.githubusercontent.com/25250496/204172072-0fabbfdf-1c4c-4f9b-8f42-505d98b18b71.png) """)
 
+st.write("""### Tamaño de efecto""")
 
+st.write("""##### En estadística, el tamaño del efecto es una medida de la fuerza o magnitud de un fenómeno. El coeficiente de correlación es una medida del tamaño del efecto para la relación (lineal) entre dos variables numéricas.Se trata de un dato esencial para interpretar los resultados de nuestro estudio y su ausencia en los artículos científicos se ha identificado como uno de los 7 fallos más comunes en investigación (según la APA 19961 , 20012 ).Para interpretar qué tan fuerte es la correlación podemos utilizar el criterio de Cohen (1988)3, quien para valores absolutos indica que valores entre:- .1-.3 representan un efecto pequeño,- .2-.5 un efecto medio- .3.5 un efecto grande.Son valores arbitrarios que te pueden servir de guía, pero te recomiendo interpretar la fuerza (o tamaño) de la correlación según el contexto de tu investigación. No es lo mismo analizar datos de un experimento físico controlado donde habrá poco ruido en los datos, que analizar datos sociales o biológicos donde se espera encontrar menores valores de correlación debido a la gran cantidad de dispersión o variabilidad de los datos.""")
+
+st.write("""###Como se mided la correlacion""")
+
+st.write("""#####Veamos ahora los coeficientes de correlación más utilizados.Tenemos el coeficiente de correlación lineal de Pearson que se sirve para cuantificar tendencias lineales, y el coeficiente de correlación de Spearman que se utiliza para tendencias de aumento o disminución, no necesariamente lineales pero sí monótonas (las variables tienden a moverse en la misma dirección relativa, pero no necesariamente a un ritmo constante; Figura 2).""")
 
 st.write(' A menudo nos interesa observar y medir la relación entre 2 variables numéricas mediante el análisis de correlación. Se trata de una de las técnicas más habituales en análisis de datos y el primer paso necesario antes de construir cualquier <modelo explicativo o predictivo más complejo Para poder tener el  Datset hay que recolectar información a travez de encuentas. A menudo nos interesa observar y medir la relación entre 2 variables numéricas mediante el análisis de correlación. Se trata de una de las *técnicas más habituales en análisis de datos* y el primer paso necesario antes de construir cualquier modelo explicativo o predictivo más complejo. Para poder tener el  Datset hay que recolectar información a travez de encuestas.')
+st.write("""# ![linea 2](https://www.maximaformacion.es/wp-content/uploads/2021/07/Que-es-la-correlacion-Relacion-lineal-y-relacion-no-lineal.png.webp) """)
+
+st.write("""###El coeficiente de correlación lineal de Pearson mide una tendencia lineal entre dos variables numéricas:""")
+
+st.write("""#####Es el método de correlación más utilizado, pero asume que:
+La tendencia debe ser de tipo lineal.No existen valores atípicos (outliers).Las variables deben ser numé Si las variables son de tipo ordinal (como las preguntas en escala de likert), no podremos aplicar la correlación de Pearson.Tenemos suficientes datos (algunos autores recomiendan tener más de 30 puntos u observaciones).
+Los dos primeros supuestos se pueden evaluar simplemente con un diagrama de dispersión, mientras que para los últimos basta con mirar los datos y evaluar el diseño que tenemos.""")
+
+st.write("""###Mapas de calor""")
+
+st.write("""#####En una entrada anterior se han visto algunos de los gráficos más importantes disponibles en la librería de Python Seaborn.En esta ocasión se va a ver cómo construir en Python dos tipos de gráficos que pueden ser muy útiles: los mapas de calor y los diagramas de araña.
+Para construir el primero de ellos se utilizará Seaborn, mientras que para el segundo se utilizará matplotlib.Saber construir mapas de calor y diagramas de araña en Python es de gran ayuda a la hora de mostrar los resultados obtenidos en nuestros análisis.
+Mapas de calor con Seabourn
+Un mapa de calor es una representación gráfica de los valores contenidos en una matriz mediante el uso de colores.En estos, los índices de la matriz representan las variables de dos características que se desean comparar. Mientras que el color utilizado en cada elemento de la matriz representa la magnitud de la relación existente. Siendo una herramienta excelente para mostrar las relaciones existentes entre las variables de diferentes características, ya que al mostrar la relación mediante un color se obtiene una interpretación fácil e intuitiva de esta.No solo esto, sino que al mismo tiempo se puede ver comparar las relaciones de unas características con otras observando otros puntos del mapa de calor.
+Un ejemplo para crear un mapa de calor con datos aleatorios se puede ver en el siguiente trozo de código.""")
+
+st.write("""# ![linea 2](https://i.postimg.cc/tgXw1y81/uuuu.jpg) """)
+
+st.write("""##### En este código se importa inicialmente las librerías necesarias: seaborn, pandas y numpy.Una vez realizado esto se ha de crear una matriz de datos aleatoria, para lo que se utiliza el método random de numpy. Esta es la matriz que se representa, para lo que se utiliza la función heatmap de seaborn. La función únicamente necesita la matriz que contiene los valores a representar, aunque se puede indicar otros parámetros para personalizar el resultado. En el ejemplo anterior se han empleado:
+center: el valor en el cual centrar el mapa de color al representar los datos.cmap: indica el mapa que se utilizará para la representación de los valores,annot: indica si se representa o no la magnitud de cada celda en el mapa además del color, por defecto no se representaráfmt: es el formato con el que se representará la magnitud.
+Los resultados obtenidos con el código anterior se pueden ver en la siguiente figura.""")
+
+st.write("""# ![linea 2](https://www.analyticslane.com/storage/2018/12/mapa-calor.png.webp) """)
+
+
+
 
 st.write("""### ¿Qué es la correlación? """)
 

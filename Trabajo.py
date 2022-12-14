@@ -1,4 +1,5 @@
 import streamlit as st
+import plotly.express as px
 
 st.write(""" """)
 
@@ -49,7 +50,7 @@ st.write("""# ![linea 2](https://user-images.githubusercontent.com/19308295/1159
 st.write("""### El Sistema recomendador deberá encontrar la compatibilidad o similitud entre un grupo de personas encuestadas, en el área de: """)
 
 #    
-st.write("""####    -Peliculas""")
+st.write("""####    *Peliculas*""")
 #     
 # 
 #     
@@ -58,27 +59,21 @@ st.write("""####    -Peliculas""")
 
 # 
 #     
-#    La <strong>compatibilidad o similitud</strong> será encontrada con el algoritmo de <strong>Correlación de Pearson</strong> y será verificada con la <strong>La Matrix de Correlación de Pearson con una librería de Python y utilizando una función personal</strong>
+st.write("""###  La compatibilidad o similitud será encontrada con el algoritmo de Correlación de Pearson y será verificada con la La Matrix de Correlación de Pearson con una librería de Python y utilizando una función personal""")
 #     
-# </div>
 
-# ![linea 2](https://user-images.githubusercontent.com/19308295/115926262-2fb62980-a448-11eb-8189-c2f10e499944.png)
 
-# <center> <h1>Base Teórica</h1> </center> 
+st.write("""# ![linea 2](https://user-images.githubusercontent.com/19308295/115926262-2fb62980-a448-11eb-8189-c2f10e499944.png) """)
 
-# ## Análisis de Correlación
+st.write("""### Base Teórica """)
 
-# El **análisis de correlación** es el primer paso para construir modelos explicativos y predictivos más complejos.
+st.write("""### Análisis de Correlación """)
 
-# <div class="alert alert-info">
-# 
-#    A menudo nos interesa observar y medir la <strong>relación entre 2 variables numéricas</strong> mediante el análisis de correlación. 
-#    Se trata de una de las *técnicas más habituales en análisis de datos* y el primer paso necesario antes de construir cualquier <strong>modelo explicativo o predictivo más complejo</strong>.
-#    Para poder tener el  Datset hay que recolectar información a travez de encuentas.
-#     
-# </div>
+st.write("""##### El *análisis de correlación* es el primer paso para construir modelos explicativos y predictivos más complejos. """)
 
-# ### ¿Qué es la correlación?
+st.write(' A menudo nos interesa observar y medir la relación entre 2 variables numéricas mediante el análisis de correlación. Se trata de una de las técnicas más habituales en análisis de datos y el primer paso necesario antes de construir cualquier <modelo explicativo o predictivo más complejo Para poder tener el  Datset hay que recolectar información a travez de encuentas. A menudo nos interesa observar y medir la relación entre 2 variables numéricas mediante el análisis de correlación. Se trata de una de las *técnicas más habituales en análisis de datos* y el primer paso necesario antes de construir cualquier modelo explicativo o predictivo más complejo. Para poder tener el  Datset hay que recolectar información a travez de encuestas.')
+
+st.write("""### ¿Qué es la correlación? """)
 
 # La correlación es un tipo de asociación entre dos variables numéricas, específicamente evalúa la **tendencia (creciente o decreciente) en los datos**.
 # 
@@ -295,12 +290,13 @@ st.write("""####    -Peliculas""")
 
 # #### Encuesta ejemplo:
 
-# La encuesta la realizamos en Google-Form donde se solicitara escoger una Película
-# - Donde si escoge 1 es el que menos le gusta hasta 5 que es el que mas le gusta (escala de liker)
+st.write("La encuesta la realizamos en Google-Form donde se solicitara escoger una Película.                                              Donde si escoge 1 es el que menos le gusta hasta 5 que es el que mas le gusta (escala de liker)")
 
-# [![Captura-de-pantalla-de-2022-12-06-15-30-01.png](https://i.postimg.cc/zGRvdMVq/Captura-de-pantalla-de-2022-12-06-15-30-01.png)](https://postimg.cc/w1g9MwXr)
+st.write("### Preprocesamiento de datos")
 
-# [![Captura-de-pantalla-de-2022-12-06-15-28-11.png](https://i.postimg.cc/4dc1swLG/Captura-de-pantalla-de-2022-12-06-15-28-11.png)](https://postimg.cc/CBF84Cpr)
+st.write("# [![Captura-de-pantalla-de-2022-12-06-15-30-01.png](https://i.postimg.cc/zGRvdMVq/Captura-de-pantalla-de-2022-12-06-15-30-01.png)](https://postimg.cc/w1g9MwXr)")
+
+st.write("# [![Captura-de-pantalla-de-2022-12-06-15-28-11.png](https://i.postimg.cc/4dc1swLG/Captura-de-pantalla-de-2022-12-06-15-28-11.png)](https://postimg.cc/CBF84Cpr)")
 
 # [![image.png](https://i.postimg.cc/cCqdjWMH/image.png)](https://postimg.cc/JDqwD9FV)
 # [![image.png](https://i.postimg.cc/4NgJQJx2/image.png)](https://postimg.cc/ThtMRvmn)
@@ -322,7 +318,7 @@ import pandas as pd
 # In[ ]:
 
 
-#archivo CSV separado por comas
+st.write("### Archivo CSV separado por comas")
 archiv = pd.read_csv('Pelicula.csv',
 engine='python')
 
@@ -391,13 +387,13 @@ Elim
 # In[ ]:
 
 
-# Reeemplazando Valores perdidos con el promedio
+st.write("""### Reeemplazando Valores perdidos con el promedio""")
+
 data_f = Elim.fillna(Elim.median(numeric_only=True))
 data_f
 
 
 # In[ ]:
-
 
 data_f.info()
 
@@ -431,9 +427,7 @@ panda_corr.isnull().sum()
 
 # ![linea 2](https://user-images.githubusercontent.com/19308295/115926262-2fb62980-a448-11eb-8189-c2f10e499944.png)
 
-# ## 4.- Matrix de Correlación nuestra
-
-# In[ ]:
+st.write("""## 4.- Matrix de Correlación nuestra """)
 
 
 import statistics
@@ -449,7 +443,7 @@ lista_u=['klajo', 'ccamilaqu', 'agomeztit', 'rabrilm', 'acamargoca', 'Kvaleroa',
        'eyucrasul', 'oscarelicv', 'fmirandaa', 'cmaron', 'mmendozala']
 colist=[]
 
-
+st.write("""## Correlacion en lista """)
 for j in lista_u:
     for i in lista_u:
         x=data_f[i]    
@@ -478,17 +472,17 @@ colist
 Listf = [round(x,3) for x in colist]
 
 
-# In[ ]:
+st.write("""## Array de correlacion """)
 
 
 matf=np.array(Listf).reshape(40,40)
 matf
 
 
-# In[ ]:
 
 
-#CONVIRTIENDO EN TABLA DE CORRELACION
+
+st.write("""## CONVIRTIENDO EN TABLA DE CORRELACION """)
 import pandas as pd
 
 print("NumPy Data Array is:")
@@ -527,7 +521,22 @@ cb.ax.tick_params(labelsize=14)
 plt.title('Correlacion Pandas', fontsize=16)
 plt.show()
 
+import pandas as pd
+import numpy as np
 
+chart_data = pd.DataFrame(
+    np.random.randn(200, 3),
+    columns=['a', 'b', 'c'])
+
+st.vega_lite_chart(chart_data, {
+    'mark': {'type': 'circle', 'tooltip': True},
+    'encoding': {
+        'x': {'field': 'a', 'type': 'quantitative'},
+        'y': {'field': 'b', 'type': 'quantitative'},
+        'size': {'field': 'c', 'type': 'quantitative'},
+        'color': {'field': 'c', 'type': 'quantitative'},
+    },
+})
 # In[ ]:
 
 
@@ -563,17 +572,18 @@ plt.show()
 
 # ![linea 2](https://user-images.githubusercontent.com/19308295/115926262-2fb62980-a448-11eb-8189-c2f10e499944.png)
 
-# ## Validación - Matrix de Correlación
+st.write("""### Validación - Matrix de Correlación""")
+
 
 # 
-# <div class="alert alert-info">
-# 
-#    Se debe llenar la tabla de __VALIDACIÓN de la Matriz de Correlación__ con los valores de `Similitud` obtenidos
+st.write("""###   Se debe llenar la tabla de __VALIDACIÓN de la Matriz de Correlación__ con los valores de `Similitud` obtenidos""")
 #     
 #     
 #    En `NUMPY` a partir de las matrices `n` y `m` con funciones.
 #     
 # </div>
+
+print ('hola mundo')
 
 # ### Validacion de resultados del panda
 
@@ -594,7 +604,7 @@ x = np.where(np.all(A==0.871,axis=0))
 A[:,x]
 
 
-# In[ ]:
+
 
 
 #EL CORREO Y PUNTAJE CORRESPONDIENTE SON:
@@ -604,10 +614,11 @@ print(maxim.sort_values(ascending=False)[range(len(panda_corr),((len(panda_corr)
 
 # ### Validacion de resultados nuestra
 
-# In[ ]:
 
 
-#VALORES ALTOS DE SIMILITUD EN NUESTRA MATRIZ DE CORRELACION
+
+st.write("""### VALORES ALTOS DE SIMILITUD EN NUESTRA MATRIZ DE CORRELACION""")
+
 def busqueda():
     Busqueda1 = Nuestro_corr[Nuestro_corr!=1].max()
     valor1 =np.max(Busqueda1)

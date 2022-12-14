@@ -519,14 +519,7 @@ st.write("""# ![linea 2](https://regresoseguroaclasesp.files.wordpress.com/2022/
 st.write("""#### correlacion nuestra """)
 st.write("""# ![linea 2](https://regresoseguroaclasesp.files.wordpress.com/2022/12/correlacion-nuestra.jpg?w=743) """)
 
-f = plt.figure(figsize=(12,9))
-plt.matshow(Nuestro_corr, fignum=f.number)
-plt.xticks(range(Nuestro_corr.shape[1]), Nuestro_corr.columns, fontsize=8, rotation=90)
-plt.yticks(range(Nuestro_corr.shape[1]), Nuestro_corr.columns, fontsize=8)
-cb = plt.colorbar()
-cb.ax.tick_params(labelsize=14)
-plt.title('Matriz de Correlación Nuestra ', fontsize=16)
-plt.show()
+
 
 
 st.write("""### 5.- RESULTADOS """)

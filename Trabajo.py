@@ -512,14 +512,7 @@ Nuestro_corr
 
 
 import numpy
-f = plt.figure(figsize=(12,9))
-plt.matshow(data_f.corr(), fignum=f.number)
-plt.xticks(range(data_f.shape[1]), data_f.columns, fontsize=8, rotation=90)
-plt.yticks(range(data_f.shape[1]), data_f.columns, fontsize=8)
-cb = plt.colorbar()
-cb.ax.tick_params(labelsize=14)
-plt.title('Correlacion Pandas', fontsize=16)
-plt.show()
+
 
 import pandas as pd
 import numpy as np

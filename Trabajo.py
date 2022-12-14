@@ -518,7 +518,7 @@ import numpy
 st.write("""# ![linea 2](https://regresoseguroaclasesp.files.wordpress.com/2022/12/correlacion-pandas.jpg?w=759) """)
 st.write("""#### correlacion nuestra """)
 st.write("""# ![linea 2](https://regresoseguroaclasesp.files.wordpress.com/2022/12/correlacion-nuestra.jpg?w=743) """)
-import matplotlib.pyplot as plt
+
 f = plt.figure(figsize=(12,9))
 plt.matshow(Nuestro_corr, fignum=f.number)
 plt.xticks(range(Nuestro_corr.shape[1]), Nuestro_corr.columns, fontsize=8, rotation=90)

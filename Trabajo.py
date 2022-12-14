@@ -509,7 +509,7 @@ Nuestro_corr
 
 
 #Mapa de calor de la correlacion de Pandas
-import seaborn as sns
+
 import matplotlib.pyplot as plt
 import numpy
 f = plt.figure(figsize=(12,9))

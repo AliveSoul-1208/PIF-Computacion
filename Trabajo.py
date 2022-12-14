@@ -66,6 +66,17 @@ st.write("""# ![linea 2](https://user-images.githubusercontent.com/19308295/1159
 
 st.write("""### Base Teórica """)
 
+st.white("""Correlación de Pearson
+ 
+El coeficiente de correlación lineal de Pearson mide una tendencia lineal entre dos variables numéricas.
+ Es el método de correlación más utilizado, pero asume que:
+La tendencia debe ser de tipo lineal.No existen valores atípicos (outliers).Las variables deben ser numéricas.Tenemos suficientes datos (algunos autores recomiendan tener más de 30 puntos u observaciones).
+Los dos primeros supuestos se pueden evaluar simplemente con un diagrama de dispersión, mientras que para los últimos basta con mirar los datos y evaluar el diseño que tenemos. Cómo se interpreta la correlación
+ El signo nos indica la dirección de la relación, como hemos visto en el diagrama de dispersión.
+un valor positivo indica una relación directa o positiva,un valor negativo indica relación indirecta, inversa o negativa,un valor nulo indica que no existe una tendencia entre ambas variables (puede ocurrir que no exista relación o que la relación sea más compleja que una tendencia, por ejemplo, una relación en forma de U).
+ La magnitud nos indica la fuerza de la relación, y toma valores entre −1 a 1. Cuanto más cercano sea el valor a los extremos del intervalo ($1$ o −1) más fuerte será la tendencia de las variables, o será menor la dispersión que existe en los puntos alrededor de dicha tendencia. Cuanto más cerca del cero esté el coeficiente de correlación, más débil será la tendencia, es decir, habrá más dispersión en la nube de puntos.
+si la correlación vale 1 o −1 diremos que la correlación es “perfecta”,si la correlación vale 0 diremos que las variables no están correlacionadas.""")
+
 st.write("""### Análisis de Correlación """)
 
 st.write("""##### El *análisis de correlación* es el primer paso para construir modelos explicativos y predictivos más complejos. """)
@@ -509,8 +520,8 @@ Nuestro_corr
 st.write("""### MAPA DE CALOR """)
 
 st.write("""#### correlacion de Pandas """)
-import seaborn as sns
-import matplotlib.pyplot as plt
+
+
 import numpy
 f = plt.figure(figsize=(12,9))
 plt.matshow(data_f.corr(), fignum=f.number)

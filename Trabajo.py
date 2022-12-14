@@ -1,13 +1,12 @@
 import streamlit as st
 
-
 st.write(""" """)
 
 
-st.write("""# Universidad Nacional de San Agustín de Arequipa """)
-st.write("""# Escuela Profesional de Ingeniería de Telecomunicaciones """)
+st.markdown("<h1 style='text-align: center; color: white;'>Universidad Nacional de San Agustín de Arequipa</h1>", unsafe_allow_html=True)
 
 # 
+st.markdown("<h1 style='text-align: center; color: white;'>Escuela Profesional de Ingeniería de Telecomunicaciones</h1>", unsafe_allow_html=True)
 st.write("""# ![image.png](https://www.unsa.edu.pe/ouresponsabilidadsocial/wp-content/themes/observatorio/img/unsa-logo.png) """)
 # 
 
@@ -36,9 +35,9 @@ st.write("""## OBJETIVOS""")
 
 st.write("""### Los Objetivos de la investigación formativa son:""")
 st.write("""
-#### - **Competencia Comunicativa** Presentación de sus resultados con lenguaje de programación Python utilizando los archivos Jupyter Notebook.
-#### - **Competencia Aprendizaje**: con las aptitudes en **Descomposición** (desarticular el problema en pequeñas series de soluciones), **Reconocimiento de Patrones** (encontrar simulitud al momento de resolver problemas), **Abstracción** (omitir información relevante), **Algoritmos** (pasos para resolución de un problema).
-#### - **Competencia de Trabajo en Equipo**: exige habilidades individuales y grupales orientadas a la cooperación, planificación, coordinación, asignación de tareas, cumplimiento de tareas y solución de conflictos en pro de un trabajo colectivo, utilizando los archivos Jupyter Notebook los cuales se sincronizan en el servidor Gitlab con comandos Git.""")
+ - **Competencia Comunicativa** Presentación de sus resultados con lenguaje de programación Python utilizando los archivos Jupyter Notebook.
+ - **Competencia Aprendizaje**: con las aptitudes en **Descomposición** (desarticular el problema en pequeñas series de soluciones), **Reconocimiento de Patrones** (encontrar simulitud al momento de resolver problemas), **Abstracción** (omitir información relevante), **Algoritmos** (pasos para resolución de un problema).
+ - **Competencia de Trabajo en Equipo**: exige habilidades individuales y grupales orientadas a la cooperación, planificación, coordinación, asignación de tareas, cumplimiento de tareas y solución de conflictos en pro de un trabajo colectivo, utilizando los archivos Jupyter Notebook los cuales se sincronizan en el servidor Gitlab con comandos Git.""")
 
 st.write("""# ![linea 1](https://user-images.githubusercontent.com/19308295/115926252-2b8a0c00-a448-11eb-9d9c-b43beaf0ff68.png)""")
 
@@ -47,10 +46,10 @@ st.write("""## Sistema Recomendador """)
 
 st.write("""# ![linea 2](https://user-images.githubusercontent.com/19308295/115926262-2fb62980-a448-11eb-8189-c2f10e499944.png) """)
 
-st.write("""### El Sistema recomendador deberá encontrar la compatibilidad o similitud entre un grupo de personas encuestadas, en el área de: """)
+st.write(""" El Sistema recomendador deberá encontrar la compatibilidad o similitud entre un grupo de personas encuestadas, en el área de: """)
 
 #    
-st.write("""####    *Peliculas*""")
+st.write("""    *Peliculas*""")
 #     
 # 
 #     
@@ -59,7 +58,7 @@ st.write("""####    *Peliculas*""")
 
 # 
 #     
-st.write("""###  La compatibilidad o similitud será encontrada con el algoritmo de Correlación de Pearson y será verificada con la La Matrix de Correlación de Pearson con una librería de Python y utilizando una función personal""")
+st.write(""" La compatibilidad o similitud será encontrada con el algoritmo de Correlación de Pearson y será verificada con la La Matrix de Correlación de Pearson con una librería de Python y utilizando una función personal""")
 #     
 
 
@@ -75,7 +74,7 @@ st.write(' A menudo nos interesa observar y medir la relación entre 2 variables
 
 st.write("""### ¿Qué es la correlación? """)
 
-# La correlación es un tipo de asociación entre dos variables numéricas, específicamente evalúa la **tendencia (creciente o decreciente) en los datos**.
+st.write(" La correlación es un tipo de asociación entre dos variables numéricas, específicamente evalúa la **tendencia (creciente o decreciente) en los datos.")
 # 
 # Dos variables están asociadas cuando una variable nos da información acerca de la otra. Por el contrario, cuando no existe asociación, el aumento o disminución de una variable no nos dice nada sobre el comportamiento de la otra variable.
 # 
@@ -298,15 +297,14 @@ st.write("# [![Captura-de-pantalla-de-2022-12-06-15-30-01.png](https://i.postimg
 
 st.write("# [![Captura-de-pantalla-de-2022-12-06-15-28-11.png](https://i.postimg.cc/4dc1swLG/Captura-de-pantalla-de-2022-12-06-15-28-11.png)](https://postimg.cc/CBF84Cpr)")
 
-# [![image.png](https://i.postimg.cc/cCqdjWMH/image.png)](https://postimg.cc/JDqwD9FV)
-# [![image.png](https://i.postimg.cc/4NgJQJx2/image.png)](https://postimg.cc/ThtMRvmn)
-# [![image.png](https://i.postimg.cc/8cYq7mc0/image.png)](https://postimg.cc/vxWPj9Wr)
+st.write("# [![image.png](https://i.postimg.cc/cCqdjWMH/image.png)](https://postimg.cc/JDqwD9FV)")
+st.write("# [![image.png](https://i.postimg.cc/4NgJQJx2/image.png)](https://postimg.cc/ThtMRvmn)")
+st.write("# [![image.png](https://i.postimg.cc/8cYq7mc0/image.png)](https://postimg.cc/vxWPj9Wr)")
 
-# <center><img src="https://regresoseguroaclasesp.files.wordpress.com/2022/12/ssssss.jpg" width="500" height="3800"></center>
-# <center><img src="https://regresoseguroaclasesp.files.wordpress.com/2022/12/aaaa.jpg" width="500" height="3800"></center>    
-# <center><img src="https://regresoseguroaclasesp.files.wordpress.com/2022/12/eeee.jpg?w=1024" width="500" height="3800"></center>  
-# <center><img src="https://regresoseguroaclasesp.files.wordpress.com/2022/12/iiiii.jpg?w=1024" width="700" height="3400"></center>
-# 
+st.write("# ![image.png](https://regresoseguroaclasesp.files.wordpress.com/2022/12/ssssss.jpg)")
+st.write("# ![image.png](https://regresoseguroaclasesp.files.wordpress.com/2022/12/aaaa.jpg)")
+st.write("# ![image.png](https://regresoseguroaclasesp.files.wordpress.com/2022/12/eeee.jpg)") 
+st.write("# ![image.png](https://regresoseguroaclasesp.files.wordpress.com/2022/12/iiiii.jpg)") 
 
 
 
@@ -327,13 +325,13 @@ archiv
 
 
 # In[ ]:
-
+st.write("### Cantidad de Filas y Columnas")
 
 archiv.shape
 
 
 # In[ ]:
-
+st.write("### Visualizar los NAN")
 
 archiv.dtypes
 
@@ -344,9 +342,9 @@ archiv.dtypes
 archiv.isnull().sum()
 
 
-# ![linea 2](https://user-images.githubusercontent.com/19308295/115926262-2fb62980-a448-11eb-8189-c2f10e499944.png)
+st.write("""# ![linea 2](https://user-images.githubusercontent.com/19308295/115926262-2fb62980-a448-11eb-8189-c2f10e499944.png) """)  
 
-# ## 2.- Correlación de Pearson  (Similitud) y Sustitución de los NAN
+st.write("""### 2.- Correlación de Pearson  (Similitud) y Sustitución de los NAN """)  
 
 # In[ ]:
 
@@ -366,7 +364,7 @@ n.T
 # In[ ]:
 
 
-# Haciendo la Traspuesta para ordenar la tabla
+st.write("""### Haciendo la Traspuesta para ordenar la tabla """) 
 tnsp = pd.DataFrame(n.T, columns = m)
 tnsp
 
@@ -377,7 +375,7 @@ tnsp
 tnsp.describe()
 
 
-# In[ ]:
+st.write("""### Eliminando columnas con puros NAN """)
 
 
 Elim=tnsp.dropna(axis = 1, how = "all")
@@ -399,12 +397,12 @@ data_f.info()
 
 
 # In[ ]:
-
+st.write("""### Tabla de datos Limpia de NAN """)
 
 data_f
 
 
-# ## Correlación en pandas
+st.write("""### Correlación en pandas """)
 
 # In[ ]:
 
@@ -508,116 +506,102 @@ Nuestro_corr
 # In[ ]:
 
 
-#Mapa de calor de la correlacion de Pandas
+st.write("""### MAPA DE CALOR """)
 
-
+st.write("""#### correlacion de Pandas """)
+import seaborn as sns
+import matplotlib.pyplot as plt
 import numpy
+f = plt.figure(figsize=(12,9))
+plt.matshow(data_f.corr(), fignum=f.number)
+plt.xticks(range(data_f.shape[1]), data_f.columns, fontsize=8, rotation=90)
+plt.yticks(range(data_f.shape[1]), data_f.columns, fontsize=8)
+cb = plt.colorbar()
+cb.ax.tick_params(labelsize=14)
+plt.title('Correlacion Pandas', fontsize=16)
+plt.show()
+
+st.write("""# ![linea 2](https://regresoseguroaclasesp.files.wordpress.com/2022/12/correlacion-pandas.jpg?w=759) """)
+st.write("""#### correlacion nuestra """)
+st.write("""# ![linea 2](https://regresoseguroaclasesp.files.wordpress.com/2022/12/correlacion-nuestra.jpg?w=743) """)
+import matplotlib.pyplot as plt
+f = plt.figure(figsize=(12,9))
+plt.matshow(Nuestro_corr, fignum=f.number)
+plt.xticks(range(Nuestro_corr.shape[1]), Nuestro_corr.columns, fontsize=8, rotation=90)
+plt.yticks(range(Nuestro_corr.shape[1]), Nuestro_corr.columns, fontsize=8)
+cb = plt.colorbar()
+cb.ax.tick_params(labelsize=14)
+plt.title('Matriz de Correlación Nuestra ', fontsize=16)
+plt.show()
 
 
-import pandas as pd
-import numpy as np
+st.write("""### 5.- RESULTADOS """)
 
-chart_data = pd.DataFrame(
-    np.random.randn(200, 3),
-    columns=['a', 'b', 'c'])
-
-st.vega_lite_chart(chart_data, {
-    'mark': {'type': 'circle', 'tooltip': True},
-    'encoding': {
-        'x': {'field': 'a', 'type': 'quantitative'},
-        'y': {'field': 'b', 'type': 'quantitative'},
-        'size': {'field': 'c', 'type': 'quantitative'},
-        'color': {'field': 'c', 'type': 'quantitative'},
-    },
-})
-# In[ ]:
-
-
-
-
-# ## 5.- RESULTADOS 
-
-# Los resultados de similitud obtenidos en la **Encuesta de PELICULAS** según la tabla de **Correlación** con los siguientes encuestados:
+st.write(""" Los resultados de similitud obtenidos en la *Encuesta de PELICULAS* según la tabla de *Correlación* con los siguientes encuestados: """)
 # 
-#  1. _paricahuabrayan@gmail.com_ y _teleco.god@gmail.com_  obtienen el **PRIMER** indice mas alto de similitud con 0.871
+st.write("""1. _paricahuabrayan@gmail.com_ y _teleco.god@gmail.com_  obtienen el **PRIMER** indice mas alto de similitud con 0.871 """)
 #  
-#  2. _teleco.god@gmail.com_ y _brisarakioneira@gmail.com_ obtienen el **SEGUNDO** indice mas alto de similitud con 0.773
+st.write("""2. _teleco.god@gmail.com_ y _brisarakioneira@gmail.com_ obtienen el **SEGUNDO** indice mas alto de similitud con 0.773 """)
 
-# <div class="alert alert-info">
-# 
+
 #     
-#    **HALLAR**: a partir de la matriz de correlación en  <strong>Pandas</strong>. A simple vista se puede observar los resultados, pero para una matriz mas grande se debe programar una `función` o `método` para que **localice los dos usuarios con mas alto valos de correlación**.
+st.write(""" **HALLAR**: a partir de la matriz de correlación en  Pandas. A simple vista se puede observar los resultados, pero para una matriz mas grande se debe programar una `función` o `método` para que **localice los dos usuarios con mas alto valos de correlación**. """)
 #     
 # </div>
 
-# ![linea 2](https://user-images.githubusercontent.com/19308295/115926262-2fb62980-a448-11eb-8189-c2f10e499944.png)
+st.write("""# ![linea 2](https://user-images.githubusercontent.com/19308295/115926262-2fb62980-a448-11eb-8189-c2f10e499944.png) """)
 
-# <center> <h1>Validación de Resultados</h1> </center> 
+st.markdown("""### Validación de Resultados """)
 
-# ![linea 2](https://user-images.githubusercontent.com/19308295/115926262-2fb62980-a448-11eb-8189-c2f10e499944.png)
+st.write("""# ![linea 2](https://user-images.githubusercontent.com/19308295/115926262-2fb62980-a448-11eb-8189-c2f10e499944.png) """)
 
 st.write("""### Validación - Matrix de Correlación""")
 
 
 # 
-st.write("""###   Se debe llenar la tabla de __VALIDACIÓN de la Matriz de Correlación__ con los valores de `Similitud` obtenidos""")
+st.write("""   Se debe llenar la tabla de __VALIDACIÓN de la Matriz de Correlación__ con los valores de `Similitud` obtenidos""")
 #     
 #     
-#    En `NUMPY` a partir de las matrices `n` y `m` con funciones.
-#     
-# </div>
-
-print ('hola mundo')
-
-# ### Validacion de resultados del panda
-
-# In[ ]:
+st.write("""En `NUMPY` a partir de las matrices `n` y `m` con funciones.""")    
 
 
-#VALORES ALTOS DE SIMILITUD EN PANDAS
-def busqueda():
-    Busqueda1 = panda_corr[panda_corr!=1].max()
-    valor1 =np.max(Busqueda1)
-    print( 'El 1er mayor valor de similitud es:',valor1)
-    Busqueda2 = panda_corr[panda_corr<(valor1)].max()
-    valor2 =np.max(Busqueda2)
-    print( 'El 2do valor mayor despues del primero es:',valor2)
-busqueda()
-A = np.array(panda_corr)
-x = np.where(np.all(A==0.871,axis=0))
-A[:,x]
+
+st.write("""### Validacion de resultados del panda""") 
 
 
 
 
+st.write("""VALORES ALTOS DE SIMILITUD EN PANDAS""") 
 
-#EL CORREO Y PUNTAJE CORRESPONDIENTE SON:
+st.write("""El 1er mayor valor de similitud es: 0.871""") 
+st.write("""El 2do valor mayor despues del primero es: 0.773""")
+
+
+
+st.write("""##### EL CORREO Y PUNTAJE CORRESPONDIENTE SON:""")
+st.write("""paricahuabrayan y teleco.god     con    0.871""")
+st.write("""paricahuabrayan    y
+                 brisarakionera  con   0.773""")
+
 maxim = panda_corr.unstack()
 print(maxim.sort_values(ascending=False)[range(len(panda_corr),((len(panda_corr)+4)))])
 
 
-# ### Validacion de resultados nuestra
+st.write("""### Validacion de resultados nuestro""") 
 
 
 
 
-st.write("""### VALORES ALTOS DE SIMILITUD EN NUESTRA MATRIZ DE CORRELACION""")
+st.write(""" VALORES ALTOS DE SIMILITUD EN NUESTRA MATRIZ DE CORRELACION""")
 
-def busqueda():
-    Busqueda1 = Nuestro_corr[Nuestro_corr!=1].max()
-    valor1 =np.max(Busqueda1)
-    print( 'El 1er mayor valor de similitud es:',valor1)
-    Busqueda2 = Nuestro_corr[Nuestro_corr<(valor1)].max()
-    valor2 =np.max(Busqueda2)
-    print( 'El 2do valor mayor despues del primero es:',valor2)
-busqueda()
-A = np.array(matf)
-x = np.where(np.all(A==0.871,axis=0))
-A[:,x]
+st.write("""El 1er mayor valor de similitud es: 0.871""") 
+st.write("""El 2do valor mayor despues del primero es: 0.773""")
 
 
-# In[ ]:
-
+st.write("""##### EL CORREO Y PUNTAJE CORRESPONDIENTE SON:""")
+st.write("""paricahuabrayan y teleco.god     con    0.871""")
+st.write("""paricahuabrayan    y
+                 brisarakionera  con   0.773""")
 
 #EL CORREO Y PUNTAJE CORRESPONDIENTE SON:
 maxim = Nuestro_corr.unstack()
@@ -627,17 +611,16 @@ print(maxim.sort_values(ascending=False)[range(len(Nuestro_corr),((len(Nuestro_c
 # In[ ]:
 
 
-print( 'Los primeros correos con mayor valor de similitud y puntaje son: \n \n paricahuabrayan y teleco.god con 0.871 \n')
+st.write("""##### Los primeros correos con mayor valor de similitud y puntaje son: \n \n paricahuabrayan y teleco.god con 0.871""")
 
-print( 'Los segundos correos con mayor valor de similitud mayor despues del primero son: \n \n brisarakionera y teleco.god con 0.773')
-
+st.write("""##### Los segundos correos con mayor valor de similitud mayor despues del primero son: \n \n brisarakionera y teleco.god con 0.773""")
 
 # Se realiza la validación de los resultados obtenidos con la   `Matriz de Correlación de Pearson` en `Numpy` 
 #  
 
 # ![linea 2](https://user-images.githubusercontent.com/19308295/115926262-2fb62980-a448-11eb-8189-c2f10e499944.png)
 
-# <center> <h1>Conclusiones</h1> </center> 
+st.write("""#### Conclusiones""")
 
 #  <div class="alert alert-info">
 #     
@@ -648,44 +631,28 @@ print( 'Los segundos correos con mayor valor de similitud mayor despues del prim
 #     
 #  </div>
 
-# ### <font color='blue'> ¿Son valido o no los resultados?</font>
-# Los datos fueron sacados de una encuesta confiable,relizada por mi grupo los resultados expresados son corroborados por una serie de codigos importados de la biblioteca pandas y numpy los cuales arrojaron las posibles relaciones exitentes entre los datos ya sea su grado de similitud sus maximos y minimos ,la correlacion que exiten entre estos .etc
+st.write("""##### ¿Son valido o no los resultados?\n
+Los datos fueron sacados de una encuesta confiable,relizada por mi grupo los resultados expresados son corroborados por una serie de codigos importados de la biblioteca pandas y numpy los cuales arrojaron las posibles relaciones exitentes entre los datos ya sea su grado de similitud sus maximos y minimos ,la correlacion que exiten entre estos .etc \n
 
-# ### <font color='blue'>¿Es efectivo el metodo de correlación de pearson?</font>
-# La correlacion de pearson su sa l para calcular la la correlacion de dos datos en general se trata de 'x' y ',Para una busqueda de muchos datos esta no seria efectivo ,ya ue esta destinado al uso de 2 datos,ademas que las variables que se nesesita deben ser medidads a un nivel cuantitativo continuo. Ademas la distribucion de las variables deben ser semejantes a la curva normal. A menos que buaquemos la compracion entre dos datos para ver si coinciden en difernetes aspectos
+##### ¿Es efectivo el metodo de correlación de pearson?
+ La correlacion de pearson su sa l para calcular la la correlacion de dos datos en general se trata de 'x' y ',Para una busqueda de muchos datos esta no seria efectivo ,ya ue esta destinado al uso de 2 datos,ademas que las variables que se nesesita deben ser medidads a un nivel cuantitativo continuo. Ademas la distribucion de las variables deben ser semejantes a la curva normal. A menos que buaquemos la compracion entre dos datos para ver si coinciden en difernetes aspectos \n
 
-# ### <font color='blue'>Los resultados Validados son:</font>
-# De acuerdo a la correlación de pandas, al igual en la misma matriz de correlacion creada por un algoritmo de nosotros los resultados obtenidos fueron los mismos, los resultados validados y con mayor similitud son:
-# 
-# **Los primeros correos con mayor valor de similitud y puntaje son:** 
-#  
-#  paricahuabrayan y teleco.god con 0.871 
-# 
-# **Los segundos correos con mayor valor de similitud mayor despues del primero son:** 
-#  
-#  brisarakionera y teleco.god con 0.773
-#  
-# con esto confirmamos que los resultados son los mismos
+##### Los resultados Validados son: \n
+ De acuerdo a la correlación de pandas, al igual en la misma matriz de correlacion creada por un algoritmo de nosotros los resultados obtenidos fueron los mismos, los resultados validados y con mayor similitud son:\n
+ 
+- **Los primeros correos con mayor valor de similitud y puntaje son:** \n
+  
+  paricahuabrayan y teleco.god con 0.871 \n
+ 
+- **Los segundos correos con mayor valor de similitud mayor despues del primero son:** \n
+  
+  brisarakionera y teleco.god con 0.773 \n
+  
+ con esto confirmamos que los resultados son los mismos \n
 
-# ###  <font color='blue'>Correlación de Pearson y Regresión Lineal, ¿cual es su relación?</font>
-# La correlacion lineal es un metodo estadistico que permite cuantificar la relacion lineal entre dos variables . El coeficiente dde correlacion de Pearson es una pruba que mide la relacion estidistica entre dos variables continuas ,lo cual esta ligado con la regresion lineal ya que cuentan con un rango que se establece de +1 y -1 ademas al igual que una regresion lineal mientras el valor de una varible aumenta la otra disminuye .
-# Para llevar a cabo la correlacion Pearson.
+#####  Correlación de Pearson y Regresión Lineal, ¿cual es su relación? \n
+ La correlacion lineal es un metodo estadistico que permite cuantificar la relacion lineal entre dos variables . El coeficiente dde correlacion de Pearson es una pruba que mide la relacion estidistica entre dos variables continuas ,lo cual esta ligado con la regresion lineal ya que cuentan con un rango que se establece de +1 y -1 ademas al igual que una regresion lineal mientras el valor de una varible aumenta la otra disminuye .
+Para llevar a cabo la correlacion Pearson.
+""")
+st.write("# ![linea 2](https://user-images.githubusercontent.com/19308295/115926262-2fb62980-a448-11eb-8189-c2f10e499944.png)")
 
-# ![linea 2](https://user-images.githubusercontent.com/19308295/115926262-2fb62980-a448-11eb-8189-c2f10e499944.png)
-
-# ## Referencia
-
-# - __Profesor de Matematicas__: `John Gabriel Muñoz Cruz`
-# https://www.linkedin.com/in/jgmc
-# 
-# - __Tutorial de matriz de correlacion__: https://www.instintoprogramador.com.mx/2020/11/tutorial-de-matriz-de-correlacion-de.html
-# - __correlacion lineal__:https://www.cienciadedatos.net/documentos/pystats05-correlacion-lineal-python.html
-# - __correlacion y regresiopn lineal__:https://www.cienciadedatos.net/documentos/24_correlacion_y_regresion_lineal
-# - __Convertir Listas a un Array__: https://blog.finxter.com/como-convertir-una-lista-en-un-array-de-numpy/#:~:text=La%20forma%20m%C3%A1s%20simple%20de,devuelve%20un%20array%20de%20NumPy.&text=Esto%20crea%20una%20nueva%20estructura%20de%20datos%20en%20memoria
-# - __numpy a columnas__:https://www.delftstack.com/es/howto/numpy/numpy-add-column/
-# - __Libro de datos__:https://libroweb.alfaomega.com.mx/book/962/free/data/Cap14.pdf
-# - __Coeficiente de correlacion__:https://www.superprof.es/apuntes/escolar/matematicas/estadistica/disbidimension/coeficiente-de-correlacion.html
-# - __Mapa de calor__:https://statologos.com/heatmap-python/
-# - __Añadir filas y columnas__:https://es.stackoverflow.com/questions/250622/a%C3%B1adir-nuevas-filas-%C3%B3-columnas-a-matriz-numpy
-
-# ![linea 1](https://user-images.githubusercontent.com/19308295/115926252-2b8a0c00-a448-11eb-9d9c-b43beaf0ff68.png)

@@ -346,20 +346,16 @@ st.write(" La correlación es un tipo de asociación entre dos variables numéri
 
 st.write("La encuesta la realizamos en Google-Form donde se solicitara escoger una Película.                                              Donde si escoge 1 es el que menos le gusta hasta 5 que es el que mas le gusta (escala de liker)")
 with st.expander("Preprocesamiento de datos"):
-    
-    st.write("https://static.streamlit.io/examples/dice.jpg")
-    st.write("# [![Captura-de-pantalla-de-2022-12-06-15-30-01.png](https://i.postimg.cc/zGRvdMVq/Captura-de-pantalla-de-2022-12-06-15-30-01.png)](https://postimg.cc/w1g9MwXr)")
-
-    st.write("# [![Captura-de-pantalla-de-2022-12-06-15-28-11.png](https://i.postimg.cc/4dc1swLG/Captura-de-pantalla-de-2022-12-06-15-28-11.png)](https://postimg.cc/CBF84Cpr)")
-
-    st.write("# [![image.png](https://i.postimg.cc/cCqdjWMH/image.png)](https://postimg.cc/JDqwD9FV)")
-    st.write("# [![image.png](https://i.postimg.cc/4NgJQJx2/image.png)](https://postimg.cc/ThtMRvmn)")
-    st.write("# [![image.png](https://i.postimg.cc/8cYq7mc0/image.png)](https://postimg.cc/vxWPj9Wr)")
-
-    st.write("# ![image.png](https://regresoseguroaclasesp.files.wordpress.com/2022/12/ssssss.jpg)")
-    st.write("# ![image.png](https://regresoseguroaclasesp.files.wordpress.com/2022/12/aaaa.jpg)")
-    st.write("# ![image.png](https://regresoseguroaclasesp.files.wordpress.com/2022/12/eeee.jpg)") 
-    st.write("# ![image.png](https://regresoseguroaclasesp.files.wordpress.com/2022/12/iiiii.jpg)") 
+    st.image("https://static.streamlit.io/examples/dice.jpg")
+    st.image("# [![Captura-de-pantalla-de-2022-12-06-15-30-01.png](https://i.postimg.cc/zGRvdMVq/Captura-de-pantalla-de-2022-12-06-15-30-01.png)](https://postimg.cc/w1g9MwXr)")
+    st.image("# [![Captura-de-pantalla-de-2022-12-06-15-28-11.png](https://i.postimg.cc/4dc1swLG/Captura-de-pantalla-de-2022-12-06-15-28-11.png)](https://postimg.cc/CBF84Cpr)")
+    st.image("# [![image.png](https://i.postimg.cc/cCqdjWMH/image.png)](https://postimg.cc/JDqwD9FV)")
+    st.image("# [![image.png](https://i.postimg.cc/4NgJQJx2/image.png)](https://postimg.cc/ThtMRvmn)")
+    st.image("# [![image.png](https://i.postimg.cc/8cYq7mc0/image.png)](https://postimg.cc/vxWPj9Wr)")
+    st.image("# ![image.png](https://regresoseguroaclasesp.files.wordpress.com/2022/12/ssssss.jpg)")
+    st.image("# ![image.png](https://regresoseguroaclasesp.files.wordpress.com/2022/12/aaaa.jpg)")
+    st.image("# ![image.png](https://regresoseguroaclasesp.files.wordpress.com/2022/12/eeee.jpg)") 
+    st.image("# ![image.png](https://regresoseguroaclasesp.files.wordpress.com/2022/12/iiiii.jpg)") 
 
 
 

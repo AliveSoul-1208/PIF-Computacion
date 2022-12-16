@@ -356,26 +356,9 @@ expander.image("# [![image.png](https://i.postimg.cc/4NgJQJx2/image.png)](https:
 expander.image("# [![image.png](https://i.postimg.cc/8cYq7mc0/image.png)](https://postimg.cc/vxWPj9Wr)")
 expander.image("# ![image.png](https://regresoseguroaclasesp.files.wordpress.com/2022/12/ssssss.jpg)")
 expander.image("# ![image.png](https://regresoseguroaclasesp.files.wordpress.com/2022/12/aaaa.jpg)")
-expanderexpander.image("# ![image.png](https://regresoseguroaclasesp.files.wordpress.com/2022/12/eeee.jpg)") 
+expander.image("# ![image.png](https://regresoseguroaclasesp.files.wordpress.com/2022/12/eeee.jpg)") 
 expander.image("# ![image.png](https://regresoseguroaclasesp.files.wordpress.com/2022/12/iiiii.jpg)") 
          
-         
-    
-with st.expander("Preprocesamiento de datos"):
-    st.image("https://static.streamlit.io/examples/dice.jpg")
-    st.image("# [![Captura-de-pantalla-de-2022-12-06-15-30-01.png](https://i.postimg.cc/zGRvdMVq/Captura-de-pantalla-de-2022-12-06-15-30-01.png)](https://postimg.cc/w1g9MwXr)")
-    st.image("# [![Captura-de-pantalla-de-2022-12-06-15-28-11.png](https://i.postimg.cc/4dc1swLG/Captura-de-pantalla-de-2022-12-06-15-28-11.png)](https://postimg.cc/CBF84Cpr)")
-    st.image("# [![image.png](https://i.postimg.cc/cCqdjWMH/image.png)](https://postimg.cc/JDqwD9FV)")
-    st.image("# [![image.png](https://i.postimg.cc/4NgJQJx2/image.png)](https://postimg.cc/ThtMRvmn)")
-    st.image("# [![image.png](https://i.postimg.cc/8cYq7mc0/image.png)](https://postimg.cc/vxWPj9Wr)")
-    st.image("# ![image.png](https://regresoseguroaclasesp.files.wordpress.com/2022/12/ssssss.jpg)")
-    st.image("# ![image.png](https://regresoseguroaclasesp.files.wordpress.com/2022/12/aaaa.jpg)")
-    st.image("# ![image.png](https://regresoseguroaclasesp.files.wordpress.com/2022/12/eeee.jpg)") 
-    st.image("# ![image.png](https://regresoseguroaclasesp.files.wordpress.com/2022/12/iiiii.jpg)") 
-
-
-
-
 #Importamos librerias para Ciencia de Datos y Machine Learning
 import numpy as np
 import pandas as pd

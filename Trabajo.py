@@ -371,10 +371,9 @@ import pandas as pd
 # In[ ]:
 
 
-   
-st.write("### Archivo CSV separado por comas")
-archiv = pd.read_csv('Pelicula.csv',
-engine='python')
+expander = st.expander("Archivo CSV")
+expander.dataframe(  pd.read_csv('Pelicula.csv',
+engine='python'))   
 
 #leer  lineas
 archiv
@@ -699,9 +698,7 @@ Para llevar a cabo la correlacion Pearson.
 st.write("# ![linea 2](https://user-images.githubusercontent.com/19308295/115926262-2fb62980-a448-11eb-8189-c2f10e499944.png)")
 
 
-expander = st.expander("Archivo CSV")
-expander.dataframe(  pd.read_csv('Pelicula.csv',
-engine='python'))
+
 
 
 

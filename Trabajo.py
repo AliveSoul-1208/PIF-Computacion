@@ -375,7 +375,7 @@ expander = st.expander("Archivo CSV")
 expander.dataframe(  pd.read_csv('Pelicula.csv',
 engine='python')) 
 
-st.write("### Archivo CSV separado por comas")
+
 archiv = pd.read_csv('Pelicula.csv',
 engine='python')
 

@@ -701,6 +701,23 @@ Para llevar a cabo la correlacion Pearson.
 """)
 st.write("# ![linea 2](https://user-images.githubusercontent.com/19308295/115926262-2fb62980-a448-11eb-8189-c2f10e499944.png)")
 
+st.write("""### MAPA DE CALOR """)
+
+st.write("""#### correlacion de Pandas """)
+import seaborn as sns
+import matplotlib.pyplot as plt
+import numpy
+f = plt.figure(figsize=(12,9))
+plt.matshow(data_f.corr(), fignum=f.number)
+plt.xticks(range(data_f.shape[1]), data_f.columns, fontsize=8, rotation=90)
+plt.yticks(range(data_f.shape[1]), data_f.columns, fontsize=8)
+cb = plt.colorbar()
+cb.ax.tick_params(labelsize=14)
+plt.title('Correlacion Pandas', fontsize=16)
+plt.show()
+
+st.pyplot(f)
+
 
 
 

@@ -380,7 +380,7 @@ archiv = pd.read_csv('Pelicula.csv',
 engine='python')
 
 #leer  lineas
-archiv
+
 
 
 # In[ ]:

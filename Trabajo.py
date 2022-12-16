@@ -706,6 +706,7 @@ st.write("""### MAPA DE CALOR """)
 st.write("""#### correlacion de Pandas """)
 
 
+import matplotlib.pyplot as plt
 import numpy
 f = plt.figure(figsize=(12,9))
 plt.matshow(data_f.corr(), fignum=f.number)

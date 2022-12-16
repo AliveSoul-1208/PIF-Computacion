@@ -701,8 +701,7 @@ st.write("# ![linea 2](https://user-images.githubusercontent.com/19308295/115926
 
 expander = st.expander("Archivo CSV")
 expander.dataframe( pd.read_csv('Pelicula.csv',)
-engine='python'
- 
+
 
 
 

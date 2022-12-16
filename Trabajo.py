@@ -704,7 +704,7 @@ st.write("# ![linea 2](https://user-images.githubusercontent.com/19308295/115926
 st.write("""### MAPA DE CALOR """)
 
 st.write("""#### correlacion de Pandas """)
-import seaborn as sns
+
 import matplotlib.pyplot as plt
 import numpy
 f = plt.figure(figsize=(12,9))

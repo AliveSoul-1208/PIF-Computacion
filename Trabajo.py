@@ -371,11 +371,7 @@ import pandas as pd
 # In[ ]:
 
 
-   expander = st.expander("Archivo CSV")
-   expander.dataframe(archiv)
    
-    
-
 st.write("### Archivo CSV separado por comas")
 archiv = pd.read_csv('Pelicula.csv',
 engine='python')

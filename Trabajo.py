@@ -719,8 +719,7 @@ import streamlit as st
 #st.markdown(sysmenu,unsafe_allow_html=True)
 
 #Add a logo (optional) in the sidebar
-logo = Image.open(r'C:\Users\13525\Desktop\Insights_Bees_logo.png')
-profile = Image.open(r'C:\Users\13525\Desktop\medium_profile.png')
+
 
 with st.sidebar:
     choose = option_menu("App Gallery", ["About", "Photo Editing", "Project Planning", "Python e-Course", "Contact"],
@@ -735,8 +734,7 @@ with st.sidebar:
     )
 
 
-logo = Image.open(r'C:\Users\13525\Desktop\Insights_Bees_logo.png')
-profile = Image.open(r'C:\Users\13525\Desktop\medium_profile.png')
+
 if choose == "About":
 #Add the cover image for the cover page. Used a little trick to center the image
     col1, col2 = st.columns( [0.8, 0.2])

@@ -707,14 +707,17 @@ st.write("""#### correlacion de Pandas """)
 
 
 import matplotlib.pyplot as plt
-import numpy as np
+import numpy as np 
+f = plt.figure(figsize=(12,9))
+plt.matshow(data_f.corr(), fignum=f.number)
+plt.xticks(range(data_f.shape[1]), data_f.columns, fontsize=8, rotation=90)
+plt.yticks(range(data_f.shape[1]), data_f.columns, fontsize=8)
+cb = plt.colorbar()
+cb.ax.tick_params(labelsize=14)
+plt.title('Correlacion Pandas', fontsize=16)
+plt.show()
 
-arr = np.random.normal(1, 1, size=100)
-fig, ax = plt.subplots()
-ax.hist(arr, bins=20)
-
-st.pyplot(fig)
-
+st.pyplot(f)
 
 
 

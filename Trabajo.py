@@ -707,7 +707,7 @@ st.write("""#### correlacion de Pandas """)
 
 
 import matplotlib.pyplot as plt
-import numpy
+import numpy as np
 f = plt.figure(figsize=(12,9))
 plt.matshow(data_f.corr(), fignum=f.number)
 plt.xticks(range(data_f.shape[1]), data_f.columns, fontsize=8, rotation=90)

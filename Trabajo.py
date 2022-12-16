@@ -370,10 +370,9 @@ import pandas as pd
 
 # In[ ]:
 
-with st.expander("ARCHIVO SEPARADO POR COMAS"):
-    st.DataFrame (archiv)
-    archiv = pd.read_csv('Pelicula.csv',
-    engine='python')
+
+   expander = st.expander("Archivo CSV")
+   expander.dataframe(archiv)
    
     
 

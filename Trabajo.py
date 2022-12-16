@@ -698,8 +698,8 @@ Para llevar a cabo la correlacion Pearson.
 """)
 st.write("# ![linea 2](https://user-images.githubusercontent.com/19308295/115926262-2fb62980-a448-11eb-8189-c2f10e499944.png)")
 
-with st.expander("See explanation"):
-       expander = st.expander("Archivo CSV")
+
+expander = st.expander("Archivo CSV")
 expander.dataframe(archiv)
  
 

@@ -347,7 +347,7 @@ st.write(" La correlación es un tipo de asociación entre dos variables numéri
 st.write("La encuesta la realizamos en Google-Form donde se solicitara escoger una Película.                                              Donde si escoge 1 es el que menos le gusta hasta 5 que es el que mas le gusta (escala de liker)")
 with st.expander("Preprocesamiento de datos"):
     
-    st.image("https://static.streamlit.io/examples/dice.jpg")
+    st.write("https://static.streamlit.io/examples/dice.jpg")
     st.write("# [![Captura-de-pantalla-de-2022-12-06-15-30-01.png](https://i.postimg.cc/zGRvdMVq/Captura-de-pantalla-de-2022-12-06-15-30-01.png)](https://postimg.cc/w1g9MwXr)")
 
     st.write("# [![Captura-de-pantalla-de-2022-12-06-15-28-11.png](https://i.postimg.cc/4dc1swLG/Captura-de-pantalla-de-2022-12-06-15-28-11.png)](https://postimg.cc/CBF84Cpr)")

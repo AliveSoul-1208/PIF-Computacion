@@ -697,6 +697,16 @@ Para llevar a cabo la correlacion Pearson.
 """)
 st.write("# ![linea 2](https://user-images.githubusercontent.com/19308295/115926262-2fb62980-a448-11eb-8189-c2f10e499944.png)")
 
+st.bar_chart({"data": [1, 5, 2, 6, 2, 1]})
+
+with st.expander("See explanation"):
+    st.write(\"\"\"
+        The chart above shows some numbers I picked for you.
+        I rolled actual dice for these, so they're *guaranteed* to
+        be random.
+    \"\"\")
+    st.image("https://static.streamlit.io/examples/dice.jpg")
+
 
 
 

@@ -329,10 +329,10 @@ st.write("""### MAPA DE CALOR """)
 
 st.write("""#### correlación de Pandas """)
 
-st.write("""# ![linea 1](http://localhost:8501/media/88fdde77c84bfc5105bca2c4fe54c4888ba3eef2136dcdc34359009b.png)""")
+st.write("""# ![linea 1](https://regresoseguroaclasesp.files.wordpress.com/2022/12/captura-de-pantalla-de-2022-12-13-21-18-34-1.png)""")
 
 st.write("""#### correlación nuestra """)
-st.write("""# ![linea 1](http://localhost:8501/media/f6ad9147071cdb2b6044163caae11851698b13d787550e5f1c37387e.png)""")
+st.write("""# ![linea 1](https://regresoseguroaclasesp.files.wordpress.com/2022/12/captura-de-pantalla-de-2022-12-13-21-18-08-1.png)""")
 
 
 st.write("""### 5.- RESULTADOS """)

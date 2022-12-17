@@ -332,31 +332,10 @@ st.write("""### MAPA DE CALOR """)
 
 st.write("""#### correlación de Pandas """)
 
-import matplotlib.pyplot as plt
-import numpy
-f = plt.figure(figsize=(12,9))
-plt.matshow(data_f.corr(), fignum=f.number)
-plt.xticks(range(data_f.shape[1]), data_f.columns, fontsize=8, rotation=90)
-plt.yticks(range(data_f.shape[1]), data_f.columns, fontsize=8)
-cb = plt.colorbar()
-cb.ax.tick_params(labelsize=14)
-plt.title('Correlacion Pandas', fontsize=16)
-plt.show()
-
-st.pyplot(f)
+st.write("""# ![linea 1](http://localhost:8501/media/88fdde77c84bfc5105bca2c4fe54c4888ba3eef2136dcdc34359009b.png)""")
 
 st.write("""#### correlación nuestra """)
-import matplotlib.pyplot as plt
-f = plt.figure(figsize=(12,9))
-plt.matshow(Nuestro_corr, fignum=f.number)
-plt.xticks(range(Nuestro_corr.shape[1]), Nuestro_corr.columns, fontsize=8, rotation=90)
-plt.yticks(range(Nuestro_corr.shape[1]), Nuestro_corr.columns, fontsize=8)
-cb = plt.colorbar()
-cb.ax.tick_params(labelsize=14)
-plt.title('Matriz de Correlación Nuestra ', fontsize=16)
-plt.show()
-
-st.pyplot(f)
+st.write("""# ![linea 1](http://localhost:8501/media/f6ad9147071cdb2b6044163caae11851698b13d787550e5f1c37387e.png)""")
 
 
 st.write("""### 5.- RESULTADOS """)

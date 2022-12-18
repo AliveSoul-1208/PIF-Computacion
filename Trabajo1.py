@@ -489,3 +489,10 @@ Para llevar a cabo la correlacion Pearson.
 """)
 st.write("# ![linea 2](https://user-images.githubusercontent.com/19308295/115926262-2fb62980-a448-11eb-8189-c2f10e499944.png)")
 
+import os
+import streamlit as st
+from streamlit_option_menu import option_menu as om
+        
+selected = om("main menu",['home','settings','whatever'], icons=['house','cloud-upload','list-task','gear'],menu_icon='cast',default_index=1,orientation='horizontal')
+selected
+

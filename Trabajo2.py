@@ -181,6 +181,8 @@ elif choose == "Propuesta":
 
     expander = st.expander(" **Propuesta** ")
     expander.write("# [![Captura-de-pantalla-de-2022-12-06-15-28-11.png](https://i.postimg.cc/4dc1swLG/Captura-de-pantalla-de-2022-12-06-15-28-11.png)](https://postimg.cc/CBF84Cpr)\n "" [![image.png](https://i.postimg.cc/cCqdjWMH/image.png)](https://postimg.cc/JDqwD9FV)\n "" [![image.png](https://i.postimg.cc/4NgJQJx2/image.png)](https://postimg.cc/ThtMRvmn)\n "" [![image.png](https://i.postimg.cc/8cYq7mc0/image.png)](https://postimg.cc/vxWPj9Wr)\n "" ![image.png](https://regresoseguroaclasesp.files.wordpress.com/2022/12/ssssss.jpg)\n "" ![image.png](https://regresoseguroaclasesp.files.wordpress.com/2022/12/aaaa.jpg)\n "" ![image.png](https://regresoseguroaclasesp.files.wordpress.com/2022/12/eeee.jpg)\n \n "" ![image.png](https://regresoseguroaclasesp.files.wordpress.com/2022/12/iiiii.jpg)\n " )
+    import pandas as pd
+    import numpy as np
     st.write("### Archivo CSV separado por comas y tabla con NAN")
     archiv = pd.read_csv('Pelicula.csv',
     engine='python')

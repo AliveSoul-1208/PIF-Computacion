@@ -492,7 +492,14 @@ st.write("# ![linea 2](https://user-images.githubusercontent.com/19308295/115926
 st.write("""### MAPA DE CALOR """)
 
 st.write("""#### correlacion de Pandas """)
-
+         
+         
+import os
+import streamlit as st
+rom streamlit_option_menu import option_menu as on
+        
+selected = om("main menu",['home','sttings','whatever'], icons=['house','cloud-upload','list-task','gear'],menu_icon='cast',default_index=1,orientation='horizontal')
+selected
 
 
 

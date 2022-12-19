@@ -16,10 +16,10 @@ with st.sidebar:
                          icons=['house', 'bar-chart-fill', 'kanban', 'book','book','book','book','person lines fill'],
                          menu_icon="app-indicator", default_index=0,
                          styles={
-        "container": {"padding": "5!important", "background-color": "#FFFFFF"},
+        "container": {"padding": "5!important", "background-color": "#000000"},
         "icon": {"color": "Green", "font-size": "25px"}, 
         "nav-link": {"font-size": "16px", "text-align": "left", "margin":"0px", "--hover-color": "#A9A9A9"},
-        "nav-link-selected": {"background-color": "#000000"},
+        "nav-link-selected": {"background-color": "#ffffff"},
     }
     )
 

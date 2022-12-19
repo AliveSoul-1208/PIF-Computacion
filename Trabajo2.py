@@ -186,11 +186,12 @@ elif choose == "Propuesta":
     st.write("### Archivo CSV separado por comas y tabla con NAN")
     archiv = pd.read_csv('Pelicula.csv',
     engine='python')
-    archiv.dtypes
 
     expander = st.expander(" **Archivo CSV** ")
     expander.dataframe(archiv)
     expander.write('Datos del dataframe "NAN"')
+    archiv.dtypes
+    expander = st.expander(" **NAN** ")
     expander.dataframe(archiv.dtypes)
     expander.write("### Cantidad de Filas y Columnas")
     expander.dataframe(archiv.shape)

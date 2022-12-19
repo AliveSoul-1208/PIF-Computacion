@@ -415,8 +415,8 @@ elif choose == "Conclusiones":
     
     st.write("""### Los resultados Validados son: """)
     st.write("""De acuerdo a la correlación de pandas, al igual en la misma matriz de correlacion creada por un algoritmo de nosotros los resultados obtenidos fueron los mismos, los resultados validados y con mayor similitud son:Los primeros correos con mayor valor de similitud y puntaje son:paricahuabrayan y teleco.god con 0.871.Los segundos correos con mayor valor de similitud mayor despues del primero son:brisarakionera y teleco.god con 0.773 con esto confirmamos que los resultados son los mismos""")
-     st.write("""### Correlación de Pearson y Regresión Lineal, ¿cual es su relación? """)
-     st.write("""La correlacion lineal es un metodo estadistico que permite cuantificar la relacion lineal entre dos variables . El coeficiente dde correlacion de Pearson es una pruba que mide la relacion estadistica entre dos variables continuas ,lo cual esta ligado con la regresion lineal ya que cuentan con un rango que se establece de +1 y -1 ademas al igual que una regresion lineal mientras el valor de una varible aumenta la otra disminuye . Para llevar a cabo la correlacion Pearson.""")
+    st.write("""### Correlación de Pearson y Regresión Lineal, ¿cual es su relación? """)
+    st.write("""La correlacion lineal es un metodo estadistico que permite cuantificar la relacion lineal entre dos variables . El coeficiente dde correlacion de Pearson es una pruba que mide la relacion estadistica entre dos variables continuas ,lo cual esta ligado con la regresion lineal ya que cuentan con un rango que se establece de +1 y -1 ademas al igual que una regresion lineal mientras el valor de una varible aumenta la otra disminuye . Para llevar a cabo la correlacion Pearson.""")
      
     
     

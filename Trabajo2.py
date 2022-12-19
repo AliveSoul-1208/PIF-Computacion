@@ -495,7 +495,7 @@ elif choose == "Validación de resultados":
     
     
 elif choose == "Conclusiones":
-    
+    st.write("""### CONCLUSIONES """)
     st.write("""### ¿Son valido o no los resultados? """)
     st.write("""Los datos fueron sacados de una encuesta confiable,relizada por mi grupo los resultados expresados son corroborados por una serie de codigos importados de la biblioteca pandas y numpy los cuales arrojaron las posibles relaciones exitentes entre los datos ya sea su grado de similitud sus maximos y minimos ,la correlacion que exiten entre estos .etc""")
     

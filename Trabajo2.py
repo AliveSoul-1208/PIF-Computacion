@@ -302,12 +302,8 @@ elif choose == "Nuestra correlación":
     st.write("""# ![linea 2](https://user-images.githubusercontent.com/19308295/115926262-2fb62980-a448-11eb-8189-c2f10e499944.png) """)
   
 elif choose == "Mapa de calor":
-    st.markdown(""" <style> .font {
-        font-size:25px ; font-family: 'Cooper Black'; color: #FF9633;} 
-        </style> """, unsafe_allow_html=True)
-        st.markdown('<p class="font">Mapa de correlación Pandas</p>', unsafe_allow_html=True)
-        
-        st.write("""# ![linea 2](https://regresoseguroaclasesp.files.wordpress.com/2022/12/captura-de-pantalla-de-2022-12-13-21-18-34-1.png) """)
+    
+    st.write("""# ![linea 2](https://regresoseguroaclasesp.files.wordpress.com/2022/12/captura-de-pantalla-de-2022-12-13-21-18-34-1.png) """)
     
     
     

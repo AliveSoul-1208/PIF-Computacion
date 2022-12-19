@@ -13,7 +13,7 @@ import io
 
 with st.sidebar:
     choose = option_menu("Aplicación en IA  Sistema Recomendador ", ["Inicio", "Objetivos", "Base Teórica", "Propuesta", "Correlación de Pearson","Nuestra correlación","Mapa de calor","Validación de resultados","Conclusiones"],
-                         icons=['house', 'bar-chart-fill', 'kanban', 'card-heading','grid-3x3-gap-fill','grid-3x3-gap-fill','book','person lines fill'],
+                         icons=['house', 'bar-chart-fill', 'kanban', 'card-heading','book','book','book','person lines fill'],
                          menu_icon="app-indicator", default_index=0,
                          styles={
         "container": {"padding": "5!important", "background-color": "#ffffff"},
@@ -503,7 +503,17 @@ elif choose == "Conclusiones":
     st.write("""La correlacion de pearson su sa l para calcular la la correlacion de dos datos en general se trata de 'x' y ',Para una busqueda de muchos datos esta no seria efectivo ,ya ue esta destinado al uso de 2 datos,ademas que las variables que se nesesita deben ser medidads a un nivel cuantitativo continuo. Ademas la distribucion de las variables deben ser semejantes a la curva normal. A menos que buaquemos la compracion entre dos datos para ver si coinciden en difernetes aspectos""")
     
     st.write("""### Los resultados Validados son: """)
-    st.write("""De acuerdo a la correlación de pandas, al igual en la misma matriz de correlacion creada por un algoritmo de nosotros los resultados obtenidos fueron los mismos, los resultados validados y con mayor similitud son:Los primeros correos con mayor valor de similitud y puntaje son:paricahuabrayan y teleco.god con 0.871.Los segundos correos con mayor valor de similitud mayor despues del primero son:brisarakionera y teleco.god con 0.773 con esto confirmamos que los resultados son los mismos""")
+    st.write("""De acuerdo a la correlación de pandas, al igual en la misma matriz de correlacion creada por un algoritmo de nosotros los resultados obtenidos fueron los mismos, los resultados validados y con mayor similitud son:
+
+Los primeros correos con mayor valor de similitud y puntaje son:
+
+paricahuabrayan y teleco.god con 0.871
+
+Los segundos correos con mayor valor de similitud mayor despues del primero son:
+
+brisarakionera y teleco.god con 0.773
+
+con esto confirmamos que los resultados son los mismos""")
     st.write("""### Correlación de Pearson y Regresión Lineal, ¿cual es su relación? """)
     st.write("""La correlacion lineal es un metodo estadistico que permite cuantificar la relacion lineal entre dos variables . El coeficiente dde correlacion de Pearson es una pruba que mide la relacion estadistica entre dos variables continuas ,lo cual esta ligado con la regresion lineal ya que cuentan con un rango que se establece de +1 y -1 ademas al igual que una regresion lineal mientras el valor de una varible aumenta la otra disminuye . Para llevar a cabo la correlacion Pearson.""")
      

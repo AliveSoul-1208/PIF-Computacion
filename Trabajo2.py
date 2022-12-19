@@ -320,7 +320,6 @@ elif choose == "Mapa de calor":
 
         Elim=tnsp.dropna(axis = 1, how = "all")
         data_f = Elim.fillna(Elim.median(numeric_only=True))
-        import seaborn as sns
         import matplotlib.pyplot as plt
         import numpy
         f = plt.figure(figsize=(12,9))

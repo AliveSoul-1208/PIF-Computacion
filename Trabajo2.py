@@ -17,8 +17,8 @@ with st.sidebar:
                          menu_icon="app-indicator", default_index=0,
                          styles={
         "container": {"padding": "5!important", "background-color": "#ffffff"},
-        "icon": {"color": "Red", "font-size": "25px"}, 
-        "nav-link": {"font-size": "16px", "text-align": "left", "margin":"0px", "--hover-color": "#A9A9A9"},
+        "icon": {"color": "Purple", "font-size": "25px"}, 
+        "nav-link": {"font-size": "16px", "text-align": "left", "margin":"0px", "--hover-color": "#8B008B"},
         "nav-link-selected": {"background-color": "#000000"},
     }
     )

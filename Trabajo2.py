@@ -12,7 +12,7 @@ import io
 
 
 with st.sidebar:
-    choose = option_menu(<center>"Aplicación en IA  Sistema Recomendador "</center>, ["Inicio", "Objetivos", "Base Teórica", "Propuesta", "Correlación de Pearson","Nuestra correlación","Mapa de calor","Validación de resultados","Conclusiones"],
+    choose = option_menu("Aplicación en IA  Sistema Recomendador ", ["Inicio", "Objetivos", "Base Teórica", "Propuesta", "Correlación de Pearson","Nuestra correlación","Mapa de calor","Validación de resultados","Conclusiones"],
                          icons=['house', 'bar-chart-fill', 'kanban', 'card-heading','grid-3x3-gap-fill','grid-3x3-gap-fill','columns','person lines fill'],
                          menu_icon="app-indicator", default_index=0,
                          styles={

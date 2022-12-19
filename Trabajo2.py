@@ -499,27 +499,32 @@ elif choose == "Validación de resultados":
     
     
 elif choose == "Conclusiones":
-    st.write("""### CONCLUSIONES """)
-    st.write("""### ¿Son valido o no los resultados? """)
-    st.write("""Los datos fueron sacados de una encuesta confiable,relizada por mi grupo los resultados expresados son corroborados por una serie de codigos importados de la biblioteca pandas y numpy los cuales arrojaron las posibles relaciones exitentes entre los datos ya sea su grado de similitud sus maximos y minimos ,la correlacion que exiten entre estos .etc""")
-    
-    st.write("""### ¿Es efectivo el metodo de correlación de pearson? """)
-    st.write("""La correlacion de pearson su sa l para calcular la la correlacion de dos datos en general se trata de 'x' y ',Para una busqueda de muchos datos esta no seria efectivo ,ya ue esta destinado al uso de 2 datos,ademas que las variables que se nesesita deben ser medidads a un nivel cuantitativo continuo. Ademas la distribucion de las variables deben ser semejantes a la curva normal. A menos que buaquemos la compracion entre dos datos para ver si coinciden en difernetes aspectos""")
-    
-    st.write("""### Los resultados Validados son: """)
-    st.write("""De acuerdo a la correlación de pandas, al igual en la misma matriz de correlacion creada por un algoritmo de nosotros los resultados obtenidos fueron los mismos, los resultados validados y con mayor similitud son:
+    col1, col2 = st.columns( [0.8, 0.2])
+    with col1:               # To display the header text using css style
+        st.markdown(""" <style> .font {
+        font-size:25px ; font-family: 'Cooper Black'; color: #FF9633;} 
+        </style> """, unsafe_allow_html=True)
+        st.markdown('<p class="font">Conclusiones</p>', unsafe_allow_html=True)
+        st.write("""### ¿Son valido o no los resultados? """)
+        st.write("""Los datos fueron sacados de una encuesta confiable,relizada por mi grupo los resultados expresados son corroborados por una serie de codigos importados de la biblioteca pandas y numpy los cuales arrojaron las posibles relaciones exitentes entre los datos ya sea su grado de similitud sus maximos y minimos ,la correlacion que exiten entre estos .etc""")
 
-Los primeros correos con mayor valor de similitud y puntaje son:
+        st.write("""### ¿Es efectivo el metodo de correlación de pearson? """)
+        st.write("""La correlacion de pearson su sa l para calcular la la correlacion de dos datos en general se trata de 'x' y ',Para una busqueda de muchos datos esta no seria efectivo ,ya ue esta destinado al uso de 2 datos,ademas que las variables que se nesesita deben ser medidads a un nivel cuantitativo continuo. Ademas la distribucion de las variables deben ser semejantes a la curva normal. A menos que buaquemos la compracion entre dos datos para ver si coinciden en difernetes aspectos""")
 
-paricahuabrayan y teleco.god con 0.871
+        st.write("""### Los resultados Validados son: """)
+        st.write("""De acuerdo a la correlación de pandas, al igual en la misma matriz de correlacion creada por un algoritmo de nosotros los resultados obtenidos fueron los mismos, los resultados validados y con mayor similitud son:
 
-Los segundos correos con mayor valor de similitud mayor despues del primero son:
+    Los primeros correos con mayor valor de similitud y puntaje son:
 
-brisarakionera y teleco.god con 0.773
+    paricahuabrayan y teleco.god con 0.871
 
-con esto confirmamos que los resultados son los mismos""")
-    st.write("""### Correlación de Pearson y Regresión Lineal, ¿cual es su relación? """)
-    st.write("""La correlacion lineal es un metodo estadistico que permite cuantificar la relacion lineal entre dos variables . El coeficiente dde correlacion de Pearson es una pruba que mide la relacion estadistica entre dos variables continuas ,lo cual esta ligado con la regresion lineal ya que cuentan con un rango que se establece de +1 y -1 ademas al igual que una regresion lineal mientras el valor de una varible aumenta la otra disminuye . Para llevar a cabo la correlacion Pearson.""")
+    Los segundos correos con mayor valor de similitud mayor despues del primero son:
+
+    brisarakionera y teleco.god con 0.773
+
+    con esto confirmamos que los resultados son los mismos""")
+        st.write("""### Correlación de Pearson y Regresión Lineal, ¿cual es su relación? """)
+        st.write("""La correlacion lineal es un metodo estadistico que permite cuantificar la relacion lineal entre dos variables . El coeficiente dde correlacion de Pearson es una pruba que mide la relacion estadistica entre dos variables continuas ,lo cual esta ligado con la regresion lineal ya que cuentan con un rango que se establece de +1 y -1 ademas al igual que una regresion lineal mientras el valor de una varible aumenta la otra disminuye . Para llevar a cabo la correlacion Pearson.""")
      
     
     

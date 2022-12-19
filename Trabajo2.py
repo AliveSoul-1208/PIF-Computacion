@@ -307,7 +307,102 @@ elif choose == "Mapa de calor":
     
     st.write("""### Mapa de calor Nuestro """)
     st.write("""# ![linea 2](https://regresoseguroaclasesp.files.wordpress.com/2022/12/captura-de-pantalla-de-2022-12-13-21-18-08-1.png) """)
+
     
+elif choose == "Validación de resultados":    
+    st.write("""### RESULTADOS """)
+
+    st.write(""" Los resultados de similitud obtenidos en la *Encuesta de PELICULAS* según la tabla de *Correlación* con los siguientes encuestados: """)
+    st.write("""1. _paricahuabrayan@gmail.com_ y _teleco.god@gmail.com_  obtienen el **PRIMER** indice mas alto de similitud con 0.871 """)  
+    st.write("""2. _teleco.god@gmail.com_ y _brisarakioneira@gmail.com_ obtienen el **SEGUNDO** indice mas alto de similitud con 0.773 """)
+    
+    st.write(""" **HALLAR**: a partir de la matriz de correlación en  Pandas. A simple vista se puede observar los resultados, pero para una matriz mas grande se debe programar una `función` o `método` para que **localice los dos usuarios con mas alto valos de correlación**. """)
+   
+    st.write("""# ![linea 2](https://user-images.githubusercontent.com/19308295/115926262-2fb62980-a448-11eb-8189-c2f10e499944.png) """)
+
+    st.markdown("""### Validación de Resultados """)
+
+    st.write("""# ![linea 2](https://user-images.githubusercontent.com/19308295/115926262-2fb62980-a448-11eb-8189-c2f10e499944.png) """)
+
+    st.write("""### Validación - Matrix de Correlación""")
+
+    st.write("""   Se debe llenar la tabla de __VALIDACIÓN de la Matriz de Correlación__ con los valores de `Similitud` obtenidos""")
+   
+    st.write("""En `NUMPY` a partir de las matrices `n` y `m` con funciones.""")    
+
+    st.write("""### Validacion de resultados del panda""") 
+
+    st.write("""VALORES ALTOS DE SIMILITUD EN PANDAS""")
+
+    code = '''#VALORES ALTOS DE SIMILITUD EN PANDAS
+    def busqueda():
+        Busqueda1 = panda_corr[panda_corr!=1].max()
+        valor1 =np.max(Busqueda1)
+        print( 'El 1er mayor valor de similitud es:',valor1)
+        Busqueda2 = panda_corr[panda_corr<(valor1)].max()
+        valor2 =np.max(Busqueda2)
+        print( 'El 2do valor mayor despues del primero es:',valor2)
+    busqueda()
+    A = np.array(panda_corr)
+    x = np.where(np.all(A==0.871,axis=0))
+    A[:,x]'''
+    st.code(code, language='python')
+
+    st.write("""El 1er mayor valor de similitud es: 0.871""") 
+    st.write("""El 2do valor mayor despues del primero es: 0.773""")
+
+    code = '''maxim = panda_corr.unstack()
+    print(maxim.sort_values(ascending=False)[range(len(panda_corr),((len(panda_corr)+4)))])'''
+    st.code(code, language='python')
+
+    st.write("""###### EL CORREO Y PUNTAJE CORRESPONDIENTE SON:""")
+    st.write("""paricahuabrayan y teleco.god     con    0.871""")
+    st.write("""paricahuabrayan    y
+                     brisarakionera  con   0.773""")
+
+    st.write("""### Validacion de resultados nuestro""") 
+
+    code = '''#VALORES ALTOS DE SIMILITUD EN NUESTRA MATRIZ DE CORRELACION
+    def busqueda():
+        Busqueda1 = Nuestro_corr[Nuestro_corr!=1].max()
+        valor1 =np.max(Busqueda1)
+        print( 'El 1er mayor valor de similitud es:',valor1)
+        Busqueda2 = Nuestro_corr[Nuestro_corr<(valor1)].max()
+        valor2 =np.max(Busqueda2)
+        print( 'El 2do valor mayor despues del primero es:',valor2)
+    busqueda()
+    A = np.array(matf)
+    x = np.where(np.all(A==0.871,axis=0))
+    A[:,x]'''
+    st.code(code, language='python')
+
+    st.write(""" VALORES ALTOS DE SIMILITUD EN NUESTRA MATRIZ DE CORRELACION""")
+
+    st.write("""El 1er mayor valor de similitud es: 0.871""") 
+    st.write("""El 2do valor mayor despues del primero es: 0.773""")
+
+
+    code = '''#EL CORREO Y PUNTAJE CORRESPONDIENTE SON:
+    maxim = panda_corr.unstack()
+    print(maxim.sort_values(ascending=False)[range(len(panda_corr),((len(panda_corr)+4)))])'''
+    st.code(code, language='python')
+
+    st.write("""###### EL CORREO Y PUNTAJE CORRESPONDIENTE SON:""")
+    st.write("""paricahuabrayan y teleco.god     con    0.871""")
+    st.write("""paricahuabrayan    y
+                     brisarakionera  con   0.773""")
+
+
+    st.write("""# ![linea 2](https://user-images.githubusercontent.com/19308295/115926262-2fb62980-a448-11eb-8189-c2f10e499944.png) """)  
+    # In[ ]:
+
+
+    st.write("""##### Los primeros correos con mayor valor de similitud y puntaje son: \n \n paricahuabrayan y teleco.god con 0.871""")
+
+    st.write("""##### Los segundos correos con mayor valor de similitud mayor despues del primero son: \n \n brisarakionera y teleco.god con 0.773""")
+
+    st.write("""# ![linea 2](https://user-images.githubusercontent.com/19308295/115926262-2fb62980-a448-11eb-8189-c2f10e499944.png) """) 
+
     
     
 elif choose == "Conclusiones":

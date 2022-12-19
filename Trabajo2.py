@@ -189,10 +189,6 @@ elif choose == "Propuesta":
 
     expander = st.expander(" **Archivo CSV** ")
     expander.dataframe(archiv)
-    expander.write('Datos del dataframe "NAN"')
-    archiv.dtypes
-    expander = st.expander(" **NAN** ")
-    expander.dataframe(archiv.dtypes)
     expander.write("### Cantidad de Filas y Columnas")
     expander.dataframe(archiv.shape)
     st.write("""# ![linea 2](https://user-images.githubusercontent.com/19308295/115926262-2fb62980-a448-11eb-8189-c2f10e499944.png) """)

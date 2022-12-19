@@ -16,10 +16,10 @@ with st.sidebar:
                          icons=['house', 'bar-chart-fill', 'kanban', 'card-heading','grid-3x3-gap-fill','grid-3x3-gap-fill','columns','person lines fill'],
                          menu_icon="app-indicator", default_index=0,
                          styles={
-        "container": {"padding": "5!important", "background-color": "#8b0000"},
+        "container": {"padding": "5!important", "background-color": "#ffffff"},
         "icon": {"color": "Green", "font-size": "25px"}, 
         "nav-link": {"font-size": "16px", "text-align": "left", "margin":"0px", "--hover-color": "#A9A9A9"},
-        "nav-link-selected": {"background-color": "#8B0000"},
+        "nav-link-selected": {"background-color": "#000000"},
     }
     )
 
@@ -524,7 +524,7 @@ elif choose == "Conclusiones":
 
     con esto confirmamos que los resultados son los mismos""")
         st.write("""### Correlación de Pearson y Regresión Lineal, ¿cual es su relación? """)
-        st.write("""La correlacion lineal es un metodo estadistico que permite cuantificar la relacion lineal entre dos variables . El coeficiente dde correlacion de Pearson es una pruba que mide la relacion estadistica entre dos variables continuas ,lo cual esta ligado con la regresion lineal ya que cuentan con un rango que se establece de +1 y -1 ademas al igual que una regresion lineal mientras el valor de una varible aumenta la otra disminuye . Para llevar a cabo la correlacion Pearson.""")
+        st.write("""La correlacion lineal es un metodo estadistico que permite cuantificar la relacion lineal entre dos variables . El coeficiente de correlacion de Pearson es una prueba que mide la relacion estadistica entre dos variables continuas ,lo cual esta ligado con la regresion lineal ya que cuentan con un rango que se establece de +1 y -1 ademas al igual que una regresion lineal mientras el valor de una varible aumenta la otra disminuye . Para llevar a cabo la correlacion Pearson.""")
      
     
     

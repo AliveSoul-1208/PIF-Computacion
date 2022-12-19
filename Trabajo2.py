@@ -502,7 +502,7 @@ elif choose == "Conclusiones":
     col1, col2 = st.columns( [0.8, 0.2])
     with col1:               # To display the header text using css style
         st.markdown(""" <style> .font {
-        font-size:25px ; font-family: 'Cooper Black'; color: #FF9633;} 
+        font-size:38px ; font-family: 'Cooper Black'; color: #FF9633;} 
         </style> """, unsafe_allow_html=True)
         st.markdown('<p class="font">Conclusiones</p>', unsafe_allow_html=True)
         st.write("""### ¿Son valido o no los resultados? """)

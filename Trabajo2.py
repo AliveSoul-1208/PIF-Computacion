@@ -13,7 +13,7 @@ import io
 
 with st.sidebar:
     choose = option_menu("Aplicación en IA  Sistema Recomendador ", ["Inicio", "Objetivos", "Base Teórica", "Propuesta", "Correlación de Pearson","Nuestra correlación","Mapa de calor","Validación de resultados","Conclusiones"],
-                         icons=['house', 'bar-chart-fill', 'kanban', 'book','book','book','book','person lines fill'],
+                         icons=['house', 'bar-chart-fill', 'kanban', 'notebook','book','book','book','person lines fill'],
                          menu_icon="app-indicator", default_index=0,
                          styles={
         "container": {"padding": "5!important", "background-color": "#ffffff"},
@@ -301,12 +301,101 @@ elif choose == "Nuestra correlación":
   
        
 elif choose == "Mapa de calor":
+    col1, col2 = st.columns( [0.8, 0.2])
+    with col1:               # To display the header text using css style
+        st.markdown(""" <style> .font {
+        font-size:38px ; font-family: 'Cooper Black'; color: #FF9633;} 
+        </style> """, unsafe_allow_html=True)
+        st.markdown('<p class="font">Mapa de calor: </p>', unsafe_allow_html=True)
+        st.write("En esta parte, partiendo de los datos obtenidos(Matriz de correlación), tomamos ambas matricez para poder realizar una grafica que demuestre la similitud que presentan ambas, asi viendo que ambas graficas son iguales y que corrobora que las correlaciones salieron completamente iguales. ")
+        st.write("##### Matriz de correlación de PANDAS ")
+        import numpy as np
+        import pandas as pd
+        archiv = pd.read_csv('Pelicula.csv',
+        engine='python')
+        n = archiv[archiv.columns[1:]].to_numpy()
+        m = archiv[archiv.columns[0]].to_numpy()
+        tnsp = pd.DataFrame(n.T, columns = m)
+        tnsp.describe()
+
+        Elim=tnsp.dropna(axis = 1, how = "all")
+        data_f = Elim.fillna(Elim.median(numeric_only=True))
+        import matplotlib.pyplot as plt
+        import numpy
+        f = plt.figure(figsize=(12,9))
+        plt.matshow(data_f.corr(), fignum=f.number)
+        plt.xticks(range(data_f.shape[1]), data_f.columns, fontsize=8, rotation=90)
+        plt.yticks(range(data_f.shape[1]), data_f.columns, fontsize=8)
+        cb = plt.colorbar()
+        cb.ax.tick_params(labelsize=14)
+        plt.title('Correlacion Pandas', fontsize=16)
+        plt.show()
+  
+        st.pyplot(f)
+        st.write("##### Matriz de correlación NUESTRA ")
+        
+        lista_u=['klajo', 'ccamilaqu', 'agomeztit', 'rabrilm', 'acamargoca', 'Kvaleroa',
+       'elhuamani', 'mlh.melody.2002', 'eduvargasrivera223', 'shanccohui',
+       'efloresmal', 'mcaceresramo', 'sebascorr3', 'yessicasuarez0820',
+       'psanchezsa', 'suareznieblerafael2021', 'imontalvo', 'rparedesmor',
+       'teleco.god', 'brisarakionera', 'raulcornejoapaza', 'jmendozaco',
+       'paricahuabrayan', 'bchavezcha', 'mccahuanaq', 'mlh.melody.2001',
+       'lugim.2002', 'alivesoul.2002', 'Chesterymaria2017', 'rxanderpq',
+       'ifigueroas', 'vichciro', 'correodeciro1234', 'asalinasal', 'amifisa69',
+       'eyucrasul', 'oscarelicv', 'fmirandaa', 'cmaron', 'mmendozala']
+        import numpy as np
+        import pandas as pd
+        import math
+        import statistics
+        archiv = pd.read_csv('Pelicula.csv',
+        engine='python')
+        n = archiv[archiv.columns[1:]].to_numpy()
+        m = archiv[archiv.columns[0]].to_numpy()
+        tnsp = pd.DataFrame(n.T, columns = m)
+        tnsp.describe()
+
+        Elim=tnsp.dropna(axis = 1, how = "all")
+        data_f = Elim.fillna(Elim.median(numeric_only=True))
+        colist=[]
+        for j in lista_u:
+            for i in lista_u:
+                x=data_f[i]    
+                y=data_f[j]
+                prod=x*y
+                x2=x**2
+                y2=y**2
     
-    st.write("""### Mapa de calor de PANDAS """)
-    st.write("""# ![linea 2](https://regresoseguroaclasesp.files.wordpress.com/2022/12/captura-de-pantalla-de-2022-12-13-21-18-34-1.png) """)
+                px=x.mean()
+                py=y.mean()
+                pxy=prod.mean()
+                cv=pxy-(px*py)
+
+                px2=x2.mean()
+                py2=y2.mean()
+
+                dx=math.sqrt(px2-(px**2))
+                dy=math.sqrt(py2-(py**2))
+
+                cofp=cv/(dx*dy)
+
+                colist.append(cofp)
+        Listf = [round(x,3) for x in colist]    
+        matf=np.array(Listf).reshape(40,40)
+        Nuestro_corr = pd.DataFrame(matf, index=lista_u, columns=lista_u)
     
-    st.write("""### Mapa de calor Nuestro """)
-    st.write("""# ![linea 2](https://regresoseguroaclasesp.files.wordpress.com/2022/12/captura-de-pantalla-de-2022-12-13-21-18-08-1.png) """)
+        import matplotlib.pyplot as plt
+        f = plt.figure(figsize=(12,9))
+        plt.matshow(Nuestro_corr, fignum=f.number)
+        plt.xticks(range(Nuestro_corr.shape[1]), Nuestro_corr.columns, fontsize=8, rotation=90)
+        plt.yticks(range(Nuestro_corr.shape[1]), Nuestro_corr.columns, fontsize=8)
+        cb = plt.colorbar()
+        cb.ax.tick_params(labelsize=14)
+        plt.title('Matriz de Correlación Nuestra ', fontsize=16)
+        plt.show()
+
+        st.pyplot(f)
+    
+        st.write("""# ![linea 2](https://user-images.githubusercontent.com/19308295/115926262-2fb62980-a448-11eb-8189-c2f10e499944.png) """)
 
     
 elif choose == "Validación de resultados":    
@@ -406,7 +495,7 @@ elif choose == "Validación de resultados":
     
     
 elif choose == "Conclusiones":
-     st.write("""### CONCLUCIONES """)
+    
     st.write("""### ¿Son valido o no los resultados? """)
     st.write("""Los datos fueron sacados de una encuesta confiable,relizada por mi grupo los resultados expresados son corroborados por una serie de codigos importados de la biblioteca pandas y numpy los cuales arrojaron las posibles relaciones exitentes entre los datos ya sea su grado de similitud sus maximos y minimos ,la correlacion que exiten entre estos .etc""")
     

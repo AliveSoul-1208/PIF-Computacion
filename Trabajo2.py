@@ -16,7 +16,7 @@ with st.sidebar:
                          icons=['house', 'bar-chart-fill', 'kanban', 'card-heading','grid-3x3-gap-fill','grid-3x3-gap-fill','columns','person lines fill'],
                          menu_icon="app-indicator", default_index=0,
                          styles={
-        "container": {"padding": "5!important", "background-color": "#ffffff"},
+        "container": {"padding": "5!important", "background-color": "#8b0000"},
         "icon": {"color": "Green", "font-size": "25px"}, 
         "nav-link": {"font-size": "16px", "text-align": "left", "margin":"0px", "--hover-color": "#A9A9A9"},
         "nav-link-selected": {"background-color": "#8B0000"},
